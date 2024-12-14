@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.MetalDrum {
     /** @customConstructor SMetalDrumSystem:new */
     export class SMetalDrumSystem extends lua.server.Map.SGlobalObjectSystem {
@@ -9,9 +9,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      checkRain: (() => any) | any;
+      checkRain(...__args: never[]): any;
 
-      convertOldModData: (() => any) | any;
+      convertOldModData(...__args: never[]): any;
     }
   }
   export namespace lua.server.MetalDrum.SMetalDrumSystem {}

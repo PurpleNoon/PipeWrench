@@ -1,12 +1,12 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Context {
     export abstract class ISMenuContextInventory {
       static [id: string]: any;
 
       /** @noSelf */
-      static new: () => any;
+      static new: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.Context.ISMenuContextInventory {}

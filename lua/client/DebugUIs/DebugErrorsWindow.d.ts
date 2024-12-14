@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor DebugErrorsWindow:new */
     export class DebugErrorsWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      refresh: (() => any) | any;
+      refresh(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugErrorsWindow {}

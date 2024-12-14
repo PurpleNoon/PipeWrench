@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISScrollBar:new */
     export class ISScrollBar extends lua.client.ISUI.ISUIElement {
@@ -31,11 +31,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(parent: any, vertical: any);
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      refresh: (() => any) | any;
+      refresh(...__args: never[]): any;
 
-      updatePos: (() => any) | any;
+      updatePos(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISScrollBar {}

@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISRemoveBush:new */
-    export class ISRemoveBush extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISRemoveBush extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -17,13 +19,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, square: any, wallVine: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      getBushObject: ((square: any) => any) | any;
+      getBushObject(square: any, ...__args: never[]): any;
 
-      getWallVineObject: ((square: any) => any) | any;
+      getWallVineObject(square: any, ...__args: never[]): any;
 
-      useEndurance: (() => any) | any;
+      useEndurance(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISRemoveBush {}

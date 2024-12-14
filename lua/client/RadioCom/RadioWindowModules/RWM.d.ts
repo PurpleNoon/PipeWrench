@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWM:new */
     export class RWM extends lua.client.ISUI.ISPanel {
@@ -15,11 +15,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      readFromObject: ((_player: any, _deviceObject: any) => any) | any;
+      readFromObject(_player: any, _deviceObject: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWM {}

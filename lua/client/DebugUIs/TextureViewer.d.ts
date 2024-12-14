@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor TextureWindow:new */
     export class TextureWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, tex: any);
 
-      renderTex: (() => any) | any;
+      renderTex(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.TextureViewer {}

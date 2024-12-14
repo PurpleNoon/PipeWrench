@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISPanel:new */
     export class ISPanel extends lua.client.ISUI.ISUIElement {
@@ -25,11 +25,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      close: (() => any) | any;
+      close(...__args: never[]): any;
 
-      noBackground: (() => any) | any;
+      noBackground(...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISPanel {}

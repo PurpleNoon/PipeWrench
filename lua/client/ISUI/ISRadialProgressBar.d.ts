@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISRadialProgressBar:new */
     export class ISRadialProgressBar extends lua.client.ISUI.ISUIElement {
@@ -11,13 +11,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, texturePath: any);
 
-      getTexture: (() => any) | any;
+      getTexture(...__args: never[]): any;
 
-      getValue: (() => any) | any;
+      getValue(...__args: never[]): any;
 
-      setTexture: ((_tex: any) => any) | any;
+      setTexture(_tex: any, ...__args: never[]): any;
 
-      setValue: ((_val: any) => any) | any;
+      setValue(_val: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISRadialProgressBar {}

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISBuildCursorMouse:new */
     export class ISBuildCursorMouse extends lua.server.BuildingObjects.ISBuildingObject {
@@ -29,14 +29,14 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, onSquareSelected: any, isValid: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      hideTooltip: (() => any) | any;
+      hideTooltip(...__args: never[]): any;
 
-      renderTooltip: (() => any) | any;
+      renderTooltip(...__args: never[]): any;
 
       /** @noSelf */
-      static IsVisible: () => any;
+      static IsVisible: (...__args: never[]) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISBuildCursorMouse {}

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMGeneral:new */
     export class RWMGeneral extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -21,11 +21,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addInfoLine: ((_prefix: any, _line: any) => any) | any;
+      addInfoLine(_prefix: any, _line: any, ...__args: never[]): any;
 
-      recalulateDim: (() => any) | any;
+      recalulateDim(...__args: never[]): any;
 
-      setInfoLines: (() => any) | any;
+      setInfoLines(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMGeneral {}

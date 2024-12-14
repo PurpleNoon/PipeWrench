@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISReloadWeaponAction:new */
-    export class ISReloadWeaponAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISReloadWeaponAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -23,43 +25,43 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, gun: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      ejectSpentRounds: (() => any) | any;
+      ejectSpentRounds(...__args: never[]): any;
 
-      initVars: (() => any) | any;
+      initVars(...__args: never[]): any;
 
-      loadAmmo: (() => any) | any;
-
-      /** @noSelf */
-      static attackHook: (character: any, chargeDelta: any, weapon: any) => any;
+      loadAmmo(...__args: never[]): any;
 
       /** @noSelf */
-      static BeginAutomaticReload: (playerObj: any, gun: any) => any;
+      static attackHook: (character: any, chargeDelta: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static canRack: (weapon: any) => any;
+      static BeginAutomaticReload: (playerObj: any, gun: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static canShoot: (weapon: any) => any;
+      static canRack: (weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnPlayerAttackFinished: (playerObj: any, weapon: any) => any;
+      static canShoot: (weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnPressRackButton: (player: any, gun: any) => any;
+      static OnPlayerAttackFinished: (playerObj: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnPressReloadButton: (player: any, gun: any) => any;
+      static OnPressRackButton: (player: any, gun: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onShoot: (player: any, weapon: any) => any;
+      static OnPressReloadButton: (player: any, gun: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ReloadBestMagazine: (playerObj: any, gun: any) => any;
+      static onShoot: (player: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static setReloadSpeed: (character: any, rack: any) => any;
+      static ReloadBestMagazine: (playerObj: any, gun: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static setReloadSpeed: (character: any, rack: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISReloadWeaponAction {}

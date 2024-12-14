@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.JoyPad {
     /** @customConstructor ISJoypadDisconnectedUI:new */
     export class ISJoypadDisconnectedUI extends lua.client.ISUI.ISUIElement {
@@ -15,9 +15,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(playerNum: any);
 
-      renderControllerDisconnected: (() => any) | any;
+      renderControllerDisconnected(...__args: never[]): any;
 
-      useKeyboardMouse: (() => any) | any;
+      useKeyboardMouse(...__args: never[]): any;
     }
   }
   export namespace lua.client.JoyPad.ISJoypadDisconnectedUI {}

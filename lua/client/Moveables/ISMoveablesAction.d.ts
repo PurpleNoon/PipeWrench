@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Moveables {
     /** @customConstructor ISMoveablesAction:new */
-    export class ISMoveablesAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISMoveablesAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -23,11 +25,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, _sq: any, _moveProps: any, _mode: any, _origSpriteName: any, _moveCursor: any);
 
-      isReachableObjectType: (() => any) | any;
+      isReachableObjectType(...__args: never[]): any;
 
-      isValidObject: (() => any) | any;
+      isValidObject(...__args: never[]): any;
 
-      setActionSound: (() => any) | any;
+      setActionSound(...__args: never[]): any;
     }
   }
   export namespace lua.client.Moveables.ISMoveablesAction {}

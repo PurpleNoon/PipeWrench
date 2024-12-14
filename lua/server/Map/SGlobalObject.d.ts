@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Map {
     /** @customConstructor SGlobalObject:new */
-    export class SGlobalObject extends lua.shared.ISBaseObject {
+    export class SGlobalObject extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -19,23 +21,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      aboutToRemoveFromSystem: (() => any) | any;
+      aboutToRemoveFromSystem(...__args: never[]): any;
 
-      getIsoObject: (() => any) | any;
+      getIsoObject(...__args: never[]): any;
 
-      getSquare: (() => any) | any;
+      getSquare(...__args: never[]): any;
 
-      initNew: (() => any) | any;
+      initNew(...__args: never[]): any;
 
-      noise: ((message: any) => any) | any;
+      noise(message: any, ...__args: never[]): any;
 
-      OnIsoObjectChangedItself: ((isoObject: any) => any) | any;
+      OnIsoObjectChangedItself(isoObject: any, ...__args: never[]): any;
 
-      removeIsoObject: (() => any) | any;
+      removeIsoObject(...__args: never[]): any;
 
-      stateFromIsoObject: ((isoObject: any) => any) | any;
+      stateFromIsoObject(isoObject: any, ...__args: never[]): any;
 
-      stateToIsoObject: ((isoObject: any) => any) | any;
+      stateToIsoObject(isoObject: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.Map.SGlobalObject {}

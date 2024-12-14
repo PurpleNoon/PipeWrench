@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISSafetyUI:new */
     export class ISSafetyUI extends lua.client.ISUI.ISPanel {
@@ -41,19 +41,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, playerNum: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getExtraLogData: (() => any) | any;
+      getExtraLogData(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      toggleSafety: (() => any) | any;
-
-      /** @noSelf */
-      static initUI: () => any;
+      toggleSafety(...__args: never[]): any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static initUI: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISSafetyUI {}

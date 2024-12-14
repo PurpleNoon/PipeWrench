@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Camping {
     /** @customConstructor SCampfireSystem:new */
     export class SCampfireSystem extends lua.server.Map.SGlobalObjectSystem {
@@ -9,19 +9,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      addCampfire: ((grid: any) => any) | any;
+      addCampfire(grid: any, ...__args: never[]): any;
 
-      convertOldModData: (() => any) | any;
+      convertOldModData(...__args: never[]): any;
 
-      isValidModData: ((modData: any) => any) | any;
+      isValidModData(modData: any, ...__args: never[]): any;
 
-      lowerFirelvl: (() => any) | any;
+      lowerFirelvl(...__args: never[]): any;
 
-      lowerFuelAmount: (() => any) | any;
+      lowerFuelAmount(...__args: never[]): any;
 
-      nearCamp: ((delay: any) => any) | any;
+      nearCamp(delay: any, ...__args: never[]): any;
 
-      removeCampfire: ((luaObject: any) => any) | any;
+      removeCampfire(luaObject: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.Camping.SCampfireSystem {}

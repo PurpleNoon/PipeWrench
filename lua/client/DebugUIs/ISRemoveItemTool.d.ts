@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISRemoveItemTool:new */
     export class ISRemoveItemTool extends lua.client.ISUI.ISPanelJoypad {
@@ -39,21 +39,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      titleBarHeight: (() => any) | any;
-
-      /** @noSelf */
-      static removeItem: (item: any, player: any) => any;
+      titleBarHeight(...__args: never[]): any;
 
       /** @noSelf */
-      static removeItems: (items: any, player: any) => any;
+      static removeItem: (item: any, player: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static removeItems: (items: any, player: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.ISRemoveItemTool {}

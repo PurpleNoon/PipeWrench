@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Farming {
     /** @customConstructor CPlantGlobalObject:new */
     export class CPlantGlobalObject extends lua.client.Map.CGlobalObject {
@@ -9,11 +9,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      canHarvest: (() => any) | any;
+      canHarvest(...__args: never[]): any;
 
-      getObject: (() => any) | any;
+      getObject(...__args: never[]): any;
 
-      isAlive: (() => any) | any;
+      isAlive(...__args: never[]): any;
     }
   }
   export namespace lua.client.Farming.CPlantGlobalObject {}

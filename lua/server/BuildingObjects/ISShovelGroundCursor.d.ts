@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISShovelGroundCursor:new */
     export class ISShovelGroundCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -21,20 +21,20 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(sprite: any, northSprite: any, character: any, groundType: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getDirtGravelSand: ((square: any) => any) | any;
+      getDirtGravelSand(square: any, ...__args: never[]): any;
 
-      getEmptyItem: (() => any) | any;
-
-      /** @noSelf */
-      static GetDirtGravelSand: (square: any) => any;
+      getEmptyItem(...__args: never[]): any;
 
       /** @noSelf */
-      static GetEmptyItem: (playerObj: any, groundType: any) => any;
+      static GetDirtGravelSand: (square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static GetEmptyItemCounts: (playerObj: any) => any;
+      static GetEmptyItem: (playerObj: any, groundType: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static GetEmptyItemCounts: (playerObj: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISShovelGroundCursor {}

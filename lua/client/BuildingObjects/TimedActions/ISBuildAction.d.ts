@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.BuildingObjects.TimedActions {
     /** @customConstructor ISBuildAction:new */
-    export class ISBuildAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISBuildAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -39,9 +41,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, x: any, y: any, z: any, north: any, spriteName: any, time: any);
 
-      faceLocation: (() => any) | any;
+      faceLocation(...__args: never[]): any;
 
-      isReachableThroughWindow: ((_square: any) => any) | any;
+      isReachableThroughWindow(_square: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.BuildingObjects.TimedActions.ISBuildAction {}

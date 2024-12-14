@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Foraging {
     /** @customConstructor ISForageAction:new */
-    export class ISForageAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISForageAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -25,7 +27,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_forageIcon: any, _targetContainer: any, _discardItems: any);
 
-      forage: (() => any) | any;
+      forage(...__args: never[]): any;
     }
   }
   export namespace lua.client.Foraging.ISForageAction {}

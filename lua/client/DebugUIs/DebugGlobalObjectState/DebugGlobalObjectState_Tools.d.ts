@@ -1,6 +1,8 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugGlobalObjectState {
     /** @customConstructor DebugGlobalObjectStateUI_DragCameraTool:new */
     export class DebugGlobalObjectStateUI_DragCameraTool extends lua.client.DebugUIs.DebugChunkState
@@ -22,7 +24,7 @@ declare module '@asledgehammer/pipewrench' {
     }
 
     /** @customConstructor DebugGlobalObjectStateUI_Tool:new */
-    export class DebugGlobalObjectStateUI_Tool extends lua.shared.ISBaseObject {
+    export class DebugGlobalObjectStateUI_Tool extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -30,17 +32,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(ui: any);
 
-      java0: ((func: any) => any) | any;
+      java0(func: any, ...__args: never[]): any;
 
-      java1: ((func: any, arg0: any) => any) | any;
+      java1(func: any, arg0: any, ...__args: never[]): any;
 
-      java2: ((func: any, arg0: any, arg1: any) => any) | any;
+      java2(func: any, arg0: any, arg1: any, ...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMove: ((dx: any, dy: any) => any) | any;
+      onMouseMove(dx: any, dy: any, ...__args: never[]): any;
 
-      onMouseUp: ((x: any, y: any) => any) | any;
+      onMouseUp(x: any, y: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugGlobalObjectState.DebugGlobalObjectState_Tools {}

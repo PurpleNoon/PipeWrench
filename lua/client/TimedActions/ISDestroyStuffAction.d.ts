@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISDestroyStuffAction:new */
-    export class ISDestroyStuffAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISDestroyStuffAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -17,9 +19,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, cornerCounter: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      getCornerWallSprite: ((wallSprite: any) => any) | any;
+      getCornerWallSprite(wallSprite: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISDestroyStuffAction {}

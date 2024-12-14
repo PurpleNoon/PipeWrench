@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.Maps.Editor {
     /** @customConstructor WorldMapEditorMode_DataFiles:new */
     export class WorldMapEditorMode_DataFiles extends lua.client.ISUI.Maps.Editor.WorldMapEditorMode {
@@ -15,23 +15,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onAddFile: (() => any) | any;
+      onAddFile(...__args: never[]): any;
 
-      onFileNameEntered: (() => any) | any;
+      onFileNameEntered(...__args: never[]): any;
 
-      onListboxButton: ((action: any, arg1: any) => any) | any;
+      onListboxButton(action: any, arg1: any, ...__args: never[]): any;
 
-      onMoveDown: (() => any) | any;
+      onMoveDown(...__args: never[]): any;
 
-      onMoveUp: (() => any) | any;
+      onMoveUp(...__args: never[]): any;
 
-      onRemoveFile: (() => any) | any;
+      onRemoveFile(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateData: (() => any) | any;
+      updateData(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorMode_DataFiles {}
