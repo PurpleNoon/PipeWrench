@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.PlayerData {
     /** @customConstructor ISPlayerDataObject:new */
-    export class ISPlayerDataObject extends lua.shared.ISBaseObject {
+    export class ISPlayerDataObject extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -59,16 +61,16 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(id: any);
 
-      createInventoryInterface: (() => any) | any;
+      createInventoryInterface(...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      placeInventoryScreens: ((playerID: any, totalPlayers: any, mouse: any) => any) | any;
+      placeInventoryScreens(playerID: any, totalPlayers: any, mouse: any, ...__args: never[]): any;
 
-      revertToKeyboardAndMouse: (() => any) | any;
+      revertToKeyboardAndMouse(...__args: never[]): any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.PlayerData.ISPlayerDataObject {}

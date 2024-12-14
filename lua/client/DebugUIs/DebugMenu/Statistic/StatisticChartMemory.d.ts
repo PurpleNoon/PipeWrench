@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Statistic {
     /** @customConstructor StatisticChartMemory:new */
     export class StatisticChartMemory extends lua.client.DebugUIs.DebugMenu.Statistic.StatisticChart {
@@ -8,10 +8,10 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static doInstance: () => any;
+      static doInstance: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Statistic.StatisticChartMemory {}

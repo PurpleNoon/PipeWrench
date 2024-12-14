@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.StoryLineSounds {
     /** @customConstructor ISStorySoundsDebug:new */
     export class ISStorySoundsDebug extends lua.client.ISUI.ISCollapsableWindow {
@@ -23,9 +23,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.StoryLineSounds.StorySoundDebug {}

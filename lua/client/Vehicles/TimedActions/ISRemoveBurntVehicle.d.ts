@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Vehicles.TimedActions {
     /** @customConstructor ISRemoveBurntVehicle:new */
-    export class ISRemoveBurntVehicle extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISRemoveBurntVehicle extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -15,7 +17,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, vehicle: any);
 
-      checkAddItem: ((item: any, baseChance: any) => any) | any;
+      checkAddItem(item: any, baseChance: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.TimedActions.ISRemoveBurntVehicle {}

@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Movers {
     /** @customConstructor ISBaseMover:new */
-    export class ISBaseMover extends lua.shared.ISBaseObject {
+    export class ISBaseMover extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -15,21 +17,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      changeState: ((state: any) => any) | any;
+      changeState(state: any, ...__args: never[]): any;
 
-      getSprite: (() => any) | any;
+      getSprite(...__args: never[]): any;
 
-      init: (() => any) | any;
+      init(...__args: never[]): any;
 
-      placeInWorld: ((x: any, y: any, z: any) => any) | any;
+      placeInWorld(x: any, y: any, z: any, ...__args: never[]): any;
 
-      playAnim: ((name: any, seconds: any, looped: any, animate: any) => any) | any;
+      playAnim(name: any, seconds: any, looped: any, animate: any, ...__args: never[]): any;
 
-      postrender: ((col: any, bDoAttached: any) => any) | any;
+      postrender(col: any, bDoAttached: any, ...__args: never[]): any;
 
-      removeFromWorld: (() => any) | any;
+      removeFromWorld(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.server.Movers.ISBaseMover {}

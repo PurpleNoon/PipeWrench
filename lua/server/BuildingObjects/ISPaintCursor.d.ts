@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISPaintCursor:new */
     export class ISPaintCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -41,17 +41,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, action: any, args: any);
 
-      _isDoorFrame: ((object: any) => any) | any;
+      _isDoorFrame(object: any, ...__args: never[]): any;
 
-      _isWall: ((object: any) => any) | any;
+      _isWall(object: any, ...__args: never[]): any;
 
-      canPaint: ((object: any) => any) | any;
+      canPaint(object: any, ...__args: never[]): any;
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getObjectList: (() => any) | any;
+      getObjectList(...__args: never[]): any;
 
-      hasItems: (() => any) | any;
+      hasItems(...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISPaintCursor {}

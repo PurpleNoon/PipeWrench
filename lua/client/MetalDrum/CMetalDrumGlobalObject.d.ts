@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.MetalDrum {
     /** @customConstructor CMetalDrumGlobalObject:new */
     export class CMetalDrumGlobalObject extends lua.client.Map.CGlobalObject {
@@ -9,7 +9,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      getObject: (() => any) | any;
+      getObject(...__args: never[]): any;
     }
   }
   export namespace lua.client.MetalDrum.CMetalDrumGlobalObject {}

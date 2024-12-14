@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMMicrophone:new */
     export class RWMMicrophone extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -15,9 +15,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onMuteButton: (() => any) | any;
+      onMuteButton(...__args: never[]): any;
 
-      setMuteButtonText: (() => any) | any;
+      setMuteButtonText(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMMicrophone {}

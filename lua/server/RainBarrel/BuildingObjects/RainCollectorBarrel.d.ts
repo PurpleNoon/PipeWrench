@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.RainBarrel.BuildingObjects {
     /** @customConstructor RainCollectorBarrel:new */
     export class RainCollectorBarrel extends lua.server.BuildingObjects.ISBuildingObject {
@@ -19,9 +19,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(player: any, sprite: any, waterMax: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getHealth: (() => any) | any;
+      getHealth(...__args: never[]): any;
     }
   }
   export namespace lua.server.RainBarrel.BuildingObjects.RainCollectorBarrel {}

@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Map {
     /** @customConstructor CGlobalObject:new */
-    export class CGlobalObject extends lua.shared.ISBaseObject {
+    export class CGlobalObject extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -19,15 +21,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      fromModData: ((modData: any) => any) | any;
+      fromModData(modData: any, ...__args: never[]): any;
 
-      getIsoObject: (() => any) | any;
+      getIsoObject(...__args: never[]): any;
 
-      getSquare: (() => any) | any;
+      getSquare(...__args: never[]): any;
 
-      noise: ((message: any) => any) | any;
+      noise(message: any, ...__args: never[]): any;
 
-      updateFromIsoObject: (() => any) | any;
+      updateFromIsoObject(...__args: never[]): any;
     }
   }
   export namespace lua.client.Map.CGlobalObject {}

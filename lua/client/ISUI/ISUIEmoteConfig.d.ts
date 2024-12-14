@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISUIEmoteConfig:new */
     export class ISUIEmoteConfig extends lua.client.ISUI.ISCollapsableWindow {
@@ -29,11 +29,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      readFile: (() => any) | any;
+      readFile(...__args: never[]): any;
 
-      selectCategory: ((combo: any) => any) | any;
+      selectCategory(combo: any, ...__args: never[]): any;
 
-      writeToFile: (() => any) | any;
+      writeToFile(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISUIEmoteConfig {}

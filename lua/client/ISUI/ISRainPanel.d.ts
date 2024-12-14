@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISRainPanel:new */
     export class ISRainPanel extends lua.client.ISUI.ISPanel {
@@ -15,15 +15,15 @@ declare module '@asledgehammer/pipewrench' {
 
       speed: any;
 
-      changeIntensity: (() => any) | any;
+      changeIntensity(...__args: never[]): any;
 
-      changeSpeed: (() => any) | any;
+      changeSpeed(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onChangeAlpha: (() => any) | any;
+      onChangeAlpha(...__args: never[]): any;
 
-      reloadTextures: (() => any) | any;
+      reloadTextures(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISRainPanel {

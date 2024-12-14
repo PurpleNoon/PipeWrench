@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopMapSpawnSelect:new */
     export class CoopMapSpawnSelect extends lua.client.OptionScreens.MapSpawnSelect {
@@ -9,9 +9,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      canRespawnWithOther: (() => any) | any;
+      canRespawnWithOther(...__args: never[]): any;
 
-      canRespawnWithSelf: (() => any) | any;
+      canRespawnWithSelf(...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.CoopMapSpawnSelect {}

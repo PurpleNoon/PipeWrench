@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.MetalDrum.BuildingObjects {
     /** @customConstructor ISMetalDrum:new */
     export class ISMetalDrum extends lua.server.BuildingObjects.ISBuildingObject {
@@ -19,7 +19,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(player: any, sprite: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.MetalDrum.BuildingObjects.ISMetalDrum {}

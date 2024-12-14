@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.LastStand {
     export abstract class LastStandData {
       static [id: string]: any;
@@ -8,7 +8,7 @@ declare module '@asledgehammer/pipewrench' {
       static chosenChallenge: any;
 
       /** @noSelf */
-      static getSpawnRegion: () => any;
+      static getSpawnRegion: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.LastStand.LastStandSetup {

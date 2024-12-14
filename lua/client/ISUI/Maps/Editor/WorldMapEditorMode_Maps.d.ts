@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.Maps.Editor {
     /** @customConstructor WorldMapEditorMode_Maps:new */
     export class WorldMapEditorMode_Maps extends lua.client.ISUI.Maps.Editor.WorldMapEditorMode {
@@ -11,17 +11,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      fillList: (() => any) | any;
+      fillList(...__args: never[]): any;
 
-      onLoadMap: (() => any) | any;
+      onLoadMap(...__args: never[]): any;
 
-      onMouseUpOutside: ((x: any, y: any) => any) | any;
+      onMouseUpOutside(x: any, y: any, ...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorMode_Maps {}

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMGridPower:new */
     export class RWMGridPower extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      toggleOnOff: (() => any) | any;
+      toggleOnOff(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMGridPower {}

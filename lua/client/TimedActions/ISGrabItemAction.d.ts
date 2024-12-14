@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISGrabItemAction:new */
-    export class ISGrabItemAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISGrabItemAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -19,9 +21,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any);
 
-      checkQueueList: (() => any) | any;
+      checkQueueList(...__args: never[]): any;
 
-      transferItem: ((item: any) => any) | any;
+      transferItem(item: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISGrabItemAction {}

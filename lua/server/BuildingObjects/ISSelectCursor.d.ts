@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISSelectCursor:new */
     export class ISSelectCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -23,7 +23,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, ui: any, onSquareSelected: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISSelectCursor {}

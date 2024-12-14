@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISImage:new */
     export class ISImage extends lua.client.ISUI.ISPanel {
@@ -21,13 +21,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, texture: any);
 
-      getTexture: (() => any) | any;
+      getTexture(...__args: never[]): any;
 
-      setColor: ((r: any, g: any, b: any) => any) | any;
+      setColor(r: any, g: any, b: any, ...__args: never[]): any;
 
-      setMouseOverText: ((text: any) => any) | any;
+      setMouseOverText(text: any, ...__args: never[]): any;
 
-      updateTooltip: (() => any) | any;
+      updateTooltip(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISImage {}

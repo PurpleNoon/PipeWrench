@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Farming.ISUI {
     /** @customConstructor ISFarmingWindow:new */
     export class ISFarmingWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -15,7 +15,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, character: any, plant: any);
 
-      visible: ((visible: any) => any) | any;
+      visible(visible: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Farming.ISUI.ISFarmingWindow {}

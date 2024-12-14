@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISAddItemInRecipe:new */
-    export class ISAddItemInRecipe extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISAddItemInRecipe extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -20,10 +22,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(character: any, recipe: any, baseItem: any, usedItem: any, time: any);
 
       /** @noSelf */
-      static checkName: (baseItem: any, recipe: any) => any;
+      static checkName: (baseItem: any, recipe: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static checkTemperature: (baseItem: any, usedItem: any, recipe: any) => any;
+      static checkTemperature: (baseItem: any, usedItem: any, recipe: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISAddItemInRecipe {}

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISResizableButton:new */
     export class ISResizableButton extends lua.client.ISUI.ISButton {
@@ -23,7 +23,7 @@ declare module '@asledgehammer/pipewrench' {
         allowMouseUpProcessing: any,
       );
 
-      resize: ((width: any) => any) | any;
+      resize(width: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISResizeableButton {}

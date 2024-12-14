@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISRunningDebugUI:new */
     export class ISRunningDebugUI extends lua.client.ISUI.ISCollapsableWindow {
@@ -37,11 +37,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      restoreEndurance: (() => any) | any;
+      restoreEndurance(...__args: never[]): any;
 
-      startTrip: (() => any) | any;
+      startTrip(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.ISRunningDebugUI {}

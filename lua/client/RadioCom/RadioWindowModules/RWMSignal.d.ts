@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMSignal:new */
     export class RWMSignal extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -29,9 +29,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      doSignal: ((_time: any) => any) | any;
+      doSignal(_time: any, ...__args: never[]): any;
 
-      setDefaultWave: (() => any) | any;
+      setDefaultWave(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMSignal {}

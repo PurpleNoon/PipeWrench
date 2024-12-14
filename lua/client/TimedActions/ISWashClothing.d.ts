@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISWashClothing:new */
-    export class ISWashClothing extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISWashClothing extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -21,18 +23,18 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, sink: any, soapList: any, item: any, bloodAmount: any, dirtAmount: any, noSoap: any);
 
-      stopSound: (() => any) | any;
+      stopSound(...__args: never[]): any;
 
-      useSoap: ((item: any, part: any) => any) | any;
-
-      /** @noSelf */
-      static GetRequiredSoap: (item: any) => any;
+      useSoap(item: any, part: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static GetRequiredWater: (item: any) => any;
+      static GetRequiredSoap: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static GetSoapRemaining: (soaps: any) => any;
+      static GetRequiredWater: (item: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static GetSoapRemaining: (soaps: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISWashClothing {}

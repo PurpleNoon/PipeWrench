@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISBrushToolTileCursor:new */
     export class ISBrushToolTileCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -23,7 +23,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(sprite: any, northSprite: any, character: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISBrushToolTileCursor {}

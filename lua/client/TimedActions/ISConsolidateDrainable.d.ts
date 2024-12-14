@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISConsolidateDrainable:new */
-    export class ISConsolidateDrainable extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISConsolidateDrainable extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -25,9 +27,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, drainable: any, intoItem: any, time: any, otherItems: any);
 
-      nextItem: (() => any) | any;
+      nextItem(...__args: never[]): any;
 
-      runAgain: ((drainable: any, intoItem: any) => any) | any;
+      runAgain(drainable: any, intoItem: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISConsolidateDrainable {}

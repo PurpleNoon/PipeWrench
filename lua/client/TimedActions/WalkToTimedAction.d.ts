@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISWalkToTimedAction:new */
-    export class ISWalkToTimedAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISWalkToTimedAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -23,7 +25,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, location: any, additionalTest: any, additionalContext: any);
 
-      setOnComplete: ((func: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      setOnComplete(func: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.WalkToTimedAction {}

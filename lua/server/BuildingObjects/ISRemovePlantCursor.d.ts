@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISRemovePlantCursor:new */
     export class ISRemovePlantCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -23,9 +23,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, removeType: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getRemovableObject: ((square: any) => any) | any;
+      getRemovableObject(square: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISRemovePlantCursor {}

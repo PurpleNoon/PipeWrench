@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Foraging {
     /** @customConstructor ISWorldItemIcon:new */
     export class ISWorldItemIcon extends lua.client.Foraging.ISBaseIcon {
@@ -17,7 +17,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_manager: any, _icon: any);
 
-      isValidWorldItem: (() => any) | any;
+      isValidWorldItem(...__args: never[]): any;
     }
   }
   export namespace lua.client.Foraging.ISWorldItemIcon {}

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAddNonPvpZoneUI:new */
     export class ISAddNonPvpZoneUI extends lua.client.ISUI.ISPanel {
@@ -31,9 +31,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISAddNonPvpZoneUI {}

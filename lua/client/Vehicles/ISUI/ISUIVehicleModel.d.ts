@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor ISUIVehicleModel:new */
     export class ISUIVehicleModel extends lua.client.ISUI.ISUIElement {
@@ -17,13 +17,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      getView: (() => any) | any;
+      getView(...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      setVehicle: ((vehicle: any) => any) | any;
+      setVehicle(vehicle: any, ...__args: never[]): any;
 
-      setView: ((name: any) => any) | any;
+      setView(name: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISUIVehicleModel {}

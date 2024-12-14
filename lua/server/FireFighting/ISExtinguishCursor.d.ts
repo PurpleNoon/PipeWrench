@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.FireFighting {
     /** @customConstructor ISExtinguishCursor:new */
     export class ISExtinguishCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -25,19 +25,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, extinguisher: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getClosestSquare: ((squares: any) => any) | any;
+      getClosestSquare(squares: any, ...__args: never[]): any;
 
-      getFireObjects: ((square: any) => any) | any;
+      getFireObjects(square: any, ...__args: never[]): any;
 
-      getSquares: ((x: any, y: any, z: any) => any) | any;
+      getSquares(x: any, y: any, z: any, ...__args: never[]): any;
 
-      getTopLeftOfSquares: ((x: any, y: any, z: any) => any) | any;
+      getTopLeftOfSquares(x: any, y: any, z: any, ...__args: never[]): any;
 
-      isRunningAction: (() => any) | any;
+      isRunningAction(...__args: never[]): any;
 
-      isValidArea: ((x: any, y: any, z: any) => any) | any;
+      isValidArea(x: any, y: any, z: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.FireFighting.ISExtinguishCursor {}

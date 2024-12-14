@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISFitnessAction:new */
-    export class ISFitnessAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISFitnessAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -29,13 +31,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, exercise: any, timeToExe: any, fitnessUI: any, exeData: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      exeLooped: (() => any) | any;
+      exeLooped(...__args: never[]): any;
 
-      setFitnessSpeed: (() => any) | any;
+      setFitnessSpeed(...__args: never[]): any;
 
-      showHandModel: (() => any) | any;
+      showHandModel(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISFitnessAction {}

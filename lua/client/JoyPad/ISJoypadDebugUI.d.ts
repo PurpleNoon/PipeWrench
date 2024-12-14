@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.JoyPad {
     /** @customConstructor ISJoypadDebugUI:new */
     export class ISJoypadDebugUI extends lua.client.ISUI.ISUIElement {
@@ -9,7 +9,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      addLine: ((x1: any, x2: any, y: any, label: any, value: any) => any) | any;
+      addLine(x1: any, x2: any, y: any, label: any, value: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.JoyPad.ISJoypadDebugUI {}

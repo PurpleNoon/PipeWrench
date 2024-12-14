@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Moveables {
     export abstract class ISMoveableDefinitions {
       static [id: string]: any;
@@ -8,7 +8,7 @@ declare module '@asledgehammer/pipewrench' {
       getInstance: (() => any) | any;
 
       /** @noSelf */
-      static load: () => any;
+      static load: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.Moveables.ISMoveableDefinitions {}

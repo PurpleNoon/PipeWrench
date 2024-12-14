@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Traps {
     /** @customConstructor CTrapGlobalObject:new */
     export class CTrapGlobalObject extends lua.client.Map.CGlobalObject {
@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      checkForWallExploit: ((square: any) => any) | any;
+      checkForWallExploit(square: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Traps.CTrapGlobalObject {}

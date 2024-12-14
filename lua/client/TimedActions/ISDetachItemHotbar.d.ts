@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISDetachItemHotbar:new */
-    export class ISDetachItemHotbar extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISDetachItemHotbar extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 
@@ -21,7 +23,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISDetachItemHotbar {}
