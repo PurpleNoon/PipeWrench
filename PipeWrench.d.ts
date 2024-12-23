@@ -8253,8 +8253,83 @@ declare module '@asledgehammer/pipewrench' {
   // [JAVA-PARTIAL:END]
   // [LUA-PARTIAL:START]
 
+  // [lua/shared/ActionManager.d.ts]
+  export abstract class Actions extends lua.shared.Actions {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISInsertLightSourceFuelAction.d.ts]
+  /** @customConstructor ISInsertLightSourceFuelAction:new */
+  export class ISInsertLightSourceFuelAction extends lua.shared.BuildingObjects.TimedActions
+    .ISInsertLightSourceFuelAction {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISMultiStageBuild.d.ts]
+  /** @customConstructor ISMultiStageBuild:new */
+  export class ISMultiStageBuild extends lua.shared.BuildingObjects.TimedActions.ISMultiStageBuild {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISPaintAction.d.ts]
+  /** @customConstructor ISPaintAction:new */
+  export class ISPaintAction extends lua.shared.BuildingObjects.TimedActions.ISPaintAction {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISPaintSignAction.d.ts]
+  /** @customConstructor ISPaintSignAction:new */
+  export class ISPaintSignAction extends lua.shared.BuildingObjects.TimedActions.ISPaintSignAction {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISPlasterAction.d.ts]
+  /** @customConstructor ISPlasterAction:new */
+  export class ISPlasterAction extends lua.shared.BuildingObjects.TimedActions.ISPlasterAction {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISRemoveLightSourceFuelAction.d.ts]
+  /** @customConstructor ISRemoveLightSourceFuelAction:new */
+  export class ISRemoveLightSourceFuelAction extends lua.shared.BuildingObjects.TimedActions
+    .ISRemoveLightSourceFuelAction {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISShovelGround.d.ts]
+  /** @customConstructor ISShovelGround:new */
+  export class ISShovelGround extends lua.shared.BuildingObjects.TimedActions.ISShovelGround {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISToggleLightSourceAction.d.ts]
+  /** @customConstructor ISToggleLightSourceAction:new */
+  export class ISToggleLightSourceAction extends lua.shared.BuildingObjects.TimedActions.ISToggleLightSourceAction {}
+
+  // [lua/shared/BuildingObjects/TimedActions/ISWallpaperAction.d.ts]
+  /** @customConstructor ISWallpaperAction:new */
+  export class ISWallpaperAction extends lua.shared.BuildingObjects.TimedActions.ISWallpaperAction {}
+
+  // [lua/shared/Camping/TimedActions/ISAddFuelAction.d.ts]
+  /** @customConstructor ISAddFuelAction:new */
+  export class ISAddFuelAction extends lua.shared.Camping.TimedActions.ISAddFuelAction {}
+
+  // [lua/shared/Camping/TimedActions/ISLightFromKindle.d.ts]
+  /** @customConstructor ISLightFromKindle:new */
+  export class ISLightFromKindle extends lua.shared.Camping.TimedActions.ISLightFromKindle {}
+
+  // [lua/shared/Camping/TimedActions/ISLightFromLiterature.d.ts]
+  /** @customConstructor ISLightFromLiterature:new */
+  export class ISLightFromLiterature extends lua.shared.Camping.TimedActions.ISLightFromLiterature {}
+
+  // [lua/shared/Camping/TimedActions/ISLightFromPetrol.d.ts]
+  /** @customConstructor ISLightFromPetrol:new */
+  export class ISLightFromPetrol extends lua.shared.Camping.TimedActions.ISLightFromPetrol {}
+
+  // [lua/shared/Camping/TimedActions/ISPutOutCampfireAction.d.ts]
+  /** @customConstructor ISPutOutCampfireAction:new */
+  export class ISPutOutCampfireAction extends lua.shared.Camping.TimedActions.ISPutOutCampfireAction {}
+
+  // [lua/shared/Camping/TimedActions/ISRemoveCampfireAction.d.ts]
+  /** @customConstructor ISRemoveCampfireAction:new */
+  export class ISRemoveCampfireAction extends lua.shared.Camping.TimedActions.ISRemoveCampfireAction {}
+
   // [lua/shared/defines.d.ts]
+  export abstract class ZombiePopulationMultiplier extends lua.shared.ZombiePopulationMultiplier {}
+  export abstract class ZombiePopulationMultiplierTable extends lua.shared.ZombiePopulationMultiplierTable {}
+  export abstract class ZombiePopulationPeakMultiplier extends lua.shared.ZombiePopulationPeakMultiplier {}
+  export abstract class ZombiePopulationStartMultiplier extends lua.shared.ZombiePopulationStartMultiplier {}
   export abstract class ZomboidGlobals extends lua.shared.ZomboidGlobals {}
+
+  // [lua/shared/Definitions/animal/AnimalAvatarDefinition.d.ts]
+  export abstract class AnimalAvatarDefinition extends lua.shared.Definitions.animal.AnimalAvatarDefinition {}
+
+  // [lua/shared/Definitions/animal/ButcheringUtil.d.ts]
+  export abstract class ButcheringUtil extends lua.shared.Definitions.animal.ButcheringUtil {}
 
   // [lua/shared/Definitions/ClothingRecipesDefinitions.d.ts]
   export abstract class ClothingRecipesDefinitions extends lua.shared.Definitions.ClothingRecipesDefinitions {}
@@ -8265,15 +8340,152 @@ declare module '@asledgehammer/pipewrench' {
   // [lua/shared/Definitions/FitnessExercises.d.ts]
   export abstract class FitnessExercises extends lua.shared.Definitions.FitnessExercises {}
 
-  // [lua/shared/Foraging/forageDefinitions.d.ts]
+  // [lua/shared/Definitions/RandomTintDefinitions.d.ts]
+  export abstract class RandomTint extends lua.shared.Definitions.RandomTint {}
+
+  // [lua/shared/Entity/TimedActions/ISCraftAnimAction.d.ts]
+  /** @customConstructor ISCraftAnimAction:new */
+  export class ISCraftAnimAction extends lua.shared.Entity.TimedActions.ISCraftAnimAction {}
+
+  // [lua/shared/Entity/TimedActions/ISGenericCraftStart.d.ts]
+  /** @customConstructor ISGenericCraftStart:new */
+  export class ISGenericCraftStart extends lua.shared.Entity.TimedActions.ISGenericCraftStart {}
+
+  // [lua/shared/Entity/TimedActions/ISHandcraftAction.d.ts]
+  /** @customConstructor ISHandcraftAction:new */
+  export class ISHandcraftAction extends lua.shared.Entity.TimedActions.ISHandcraftAction {}
+
+  // [lua/shared/Entity/TimedActions/ISItemSlotAddAction.d.ts]
+  /** @customConstructor ISItemSlotAddAction:new */
+  export class ISItemSlotAddAction extends lua.shared.Entity.TimedActions.ISItemSlotAddAction {}
+
+  // [lua/shared/Entity/TimedActions/ISItemSlotRemoveAction.d.ts]
+  /** @customConstructor ISItemSlotRemoveAction:new */
+  export class ISItemSlotRemoveAction extends lua.shared.Entity.TimedActions.ISItemSlotRemoveAction {}
+
+  // [lua/shared/Entity/TimedActions/ISStartCraftProcessorAction.d.ts]
+  /** @customConstructor ISStartCraftProcessorAction:new */
+  export class ISStartCraftProcessorAction extends lua.shared.Entity.TimedActions.ISStartCraftProcessorAction {}
+
+  // [lua/shared/Farming/TimedActions/ISCurePlantAction.d.ts]
+  /** @customConstructor ISCurePlantAction:new */
+  export class ISCurePlantAction extends lua.shared.Farming.TimedActions.ISCurePlantAction {}
+
+  // [lua/shared/Farming/TimedActions/ISFertilizeAction.d.ts]
+  /** @customConstructor ISFertilizeAction:new */
+  export class ISFertilizeAction extends lua.shared.Farming.TimedActions.ISFertilizeAction {}
+
+  // [lua/shared/Farming/TimedActions/ISHarvestPlantAction.d.ts]
+  /** @customConstructor ISHarvestPlantAction:new */
+  export class ISHarvestPlantAction extends lua.shared.Farming.TimedActions.ISHarvestPlantAction {}
+
+  // [lua/shared/Farming/TimedActions/ISPlowAction.d.ts]
+  /** @customConstructor ISPlowAction:new */
+  export class ISPlowAction extends lua.shared.Farming.TimedActions.ISPlowAction {}
+
+  // [lua/shared/Farming/TimedActions/ISSeedActionNew.d.ts]
+  /** @customConstructor ISSeedActionNew:new */
+  export class ISSeedActionNew extends lua.shared.Farming.TimedActions.ISSeedActionNew {}
+
+  // [lua/shared/Farming/TimedActions/ISShovelAction.d.ts]
+  /** @customConstructor ISShovelAction:new */
+  export class ISShovelAction extends lua.shared.Farming.TimedActions.ISShovelAction {}
+
+  // [lua/shared/Farming/TimedActions/ISWaterPlantAction.d.ts]
+  /** @customConstructor ISWaterPlantAction:new */
+  export class ISWaterPlantAction extends lua.shared.Farming.TimedActions.ISWaterPlantAction {}
+
+  // [lua/shared/FeedingTrough/TimedActions/ISAddWaterToTrough.d.ts]
+  /** @customConstructor ISAddWaterToTrough:new */
+  export class ISAddWaterToTrough extends lua.shared.FeedingTrough.TimedActions.ISAddWaterToTrough {}
+
+  // [lua/shared/FeedingTrough/TimedActions/ISEmptyWaterInTrough.d.ts]
+  /** @customConstructor ISEmptyWaterInTrough:new */
+  export class ISEmptyWaterInTrough extends lua.shared.FeedingTrough.TimedActions.ISEmptyWaterInTrough {}
+
+  // [lua/shared/Fishing/fishing_properties.d.ts]
+  /** @noSelf */
+  export const clearLures: () => any;
+  /** @noSelf */
+  export const initFishSizeData: () => any;
+
+  // [lua/shared/Fishing/FishingUtils.d.ts]
+  /** @noSelf */
+  export const getTimeParams: () => any;
+  /** @noSelf */
+  export const getWeatherParams: () => any;
+
+  // [lua/shared/Fluids/ISFluidContainer.d.ts]
+  /** @customConstructor ISFluidContainer:new */
+  export class ISFluidContainer extends lua.shared.Fluids.ISFluidContainer {}
+
+  // [lua/shared/Fluids/ISFluidEmptyAction.d.ts]
+  /** @customConstructor ISFluidEmptyAction:new */
+  export class ISFluidEmptyAction extends lua.shared.Fluids.ISFluidEmptyAction {}
+
+  // [lua/shared/Fluids/ISFluidTransferAction.d.ts]
+  /** @customConstructor ISFluidTransferAction:new */
+  export class ISFluidTransferAction extends lua.shared.Fluids.ISFluidTransferAction {}
+
+  // [lua/shared/Fluids/ISFluidUtil.d.ts]
+  export abstract class ISFluidUtil extends lua.shared.Fluids.ISFluidUtil {}
+
+  // [lua/shared/Foraging/Categories/Ammo.d.ts]
+
+  // [lua/shared/Foraging/Categories/Animals.d.ts]
+
+  // [lua/shared/Foraging/Categories/Berries.d.ts]
+
+  // [lua/shared/Foraging/Categories/Clothing.d.ts]
+
+  // [lua/shared/Foraging/Categories/DeadAnimals.d.ts]
+
+  // [lua/shared/Foraging/Categories/ForestGoods.d.ts]
+
+  // [lua/shared/Foraging/Categories/ForestRarities.d.ts]
+
+  // [lua/shared/Foraging/Categories/Fruits.d.ts]
+
+  // [lua/shared/Foraging/Categories/Herbs.d.ts]
+
+  // [lua/shared/Foraging/Categories/Insects.d.ts]
+
+  // [lua/shared/Foraging/Categories/Junk.d.ts]
+
+  // [lua/shared/Foraging/Categories/Medical.d.ts]
+
+  // [lua/shared/Foraging/Categories/MedicinalPlants.d.ts]
+
+  // [lua/shared/Foraging/Categories/Mushrooms.d.ts]
+
+  // [lua/shared/Foraging/Categories/Stones.d.ts]
+
+  // [lua/shared/Foraging/Categories/Vegetables.d.ts]
+
+  // [lua/shared/Foraging/Categories/WildPlants.d.ts]
+
+  // [lua/shared/Foraging/forageCategories.d.ts]
   export abstract class forageCategories extends lua.shared.Foraging.forageCategories {}
+
+  // [lua/shared/Foraging/forageDefinitions.d.ts]
   export abstract class forageDefaultDefs extends lua.shared.Foraging.forageDefaultDefs {}
   export abstract class forageDefs extends lua.shared.Foraging.forageDefs {}
+
+  // [lua/shared/Foraging/forageSkills.d.ts]
   export abstract class forageSkills extends lua.shared.Foraging.forageSkills {}
   export abstract class forageZones extends lua.shared.Foraging.forageZones {}
 
   // [lua/shared/Foraging/forageSystem.d.ts]
   export abstract class forageSystem extends lua.shared.Foraging.forageSystem {}
+
+  // [lua/shared/Foraging/forageZones.d.ts]
+  export abstract class forageZones extends lua.shared.Foraging.forageZones {}
+
+  // [lua/shared/Foraging/ISForageAction.d.ts]
+  /** @customConstructor ISForageAction:new */
+  export class ISForageAction extends lua.shared.Foraging.ISForageAction {}
+
+  // [lua/shared/Foraging/scavenges.d.ts]
 
   // [lua/shared/ISBaseObject.d.ts]
   /** @customConstructor ISBaseObject:new */
@@ -8304,57 +8516,34 @@ declare module '@asledgehammer/pipewrench' {
   // [lua/shared/luautils.d.ts]
   export abstract class luautils extends lua.shared.luautils {}
 
+  // [lua/shared/Moveables/ISMoveableDefinitions.d.ts]
+  export abstract class ISMoveableDefinitions extends lua.shared.Moveables.ISMoveableDefinitions {}
+
+  // [lua/shared/Moveables/ISMoveablesAction.d.ts]
+  /** @customConstructor ISMoveablesAction:new */
+  export class ISMoveablesAction extends lua.shared.Moveables.ISMoveablesAction {}
+
+  // [lua/shared/Moveables/ISMoveableSpriteProps.d.ts]
+  export abstract class InfoPanelFlags extends lua.shared.Moveables.InfoPanelFlags {}
+  export abstract class ISMoveableSpriteProps extends lua.shared.Moveables.ISMoveableSpriteProps {}
+  export abstract class ISThumpableSpriteProps extends lua.shared.Moveables.ISThumpableSpriteProps {}
+  export abstract class SpriteGridCache extends lua.shared.Moveables.SpriteGridCache {}
+
+  // [lua/shared/Moveables/ISMoveableTools.d.ts]
+  export abstract class ISMoveableTools extends lua.shared.Moveables.ISMoveableTools {}
+
   // [lua/shared/NPCs/MainCreationMethods.d.ts]
   export abstract class BaseGameCharacterDetails extends lua.shared.NPCs.BaseGameCharacterDetails {}
 
-  // [lua/shared/RecordedMedia/ISRecordeMedia.d.ts]
-  export abstract class ISRecordedMedia extends lua.shared.RecordedMedia.ISRecordedMedia {}
+  // [lua/shared/PrintMedia/PrintMediaDefinitions.d.ts]
+  export abstract class PrintMediaDefinitions extends lua.shared.PrintMedia.PrintMediaDefinitions {}
 
-  // [lua/shared/Reloading/ISRackAction.d.ts]
-  /** @customConstructor ISRackAction:new */
-  export class ISRackAction extends lua.shared.Reloading.ISRackAction {}
-
-  // [lua/shared/Reloading/ISReloadable.d.ts]
-  /** @customConstructor ISReloadable:new */
-  export class ISReloadable extends lua.shared.Reloading.ISReloadable {}
-
-  // [lua/shared/Reloading/ISReloadableMagazine.d.ts]
-  /** @customConstructor ISReloadableMagazine:new */
-  export class ISReloadableMagazine extends lua.shared.Reloading.ISReloadableMagazine {}
-
-  // [lua/shared/Reloading/ISReloadableWeapon.d.ts]
-  /** @customConstructor ISReloadableWeapon:new */
-  export class ISReloadableWeapon extends lua.shared.Reloading.ISReloadableWeapon {}
-
-  // [lua/shared/Reloading/ISReloadAction.d.ts]
-  /** @customConstructor ISReloadAction:new */
-  export class ISReloadAction extends lua.shared.Reloading.ISReloadAction {}
-
-  // [lua/shared/Reloading/ISReloadManager.d.ts]
-  /** @customConstructor ISReloadManager:new */
-  export class ISReloadManager extends lua.shared.Reloading.ISReloadManager {}
-  export abstract class aaa extends lua.shared.Reloading.aaa {}
-
-  // [lua/shared/Reloading/ISReloadUtil.d.ts]
-  /** @customConstructor ISReloadUtil:new */
-  export class ISReloadUtil extends lua.shared.Reloading.ISReloadUtil {}
-
-  // [lua/shared/Reloading/ISRevolverWeapon.d.ts]
-  /** @customConstructor ISRevolverWeapon:new */
-  export class ISRevolverWeapon extends lua.shared.Reloading.ISRevolverWeapon {}
-
-  // [lua/shared/Reloading/ISSemiAutoWeapon.d.ts]
-  /** @customConstructor ISSemiAutoWeapon:new */
-  export class ISSemiAutoWeapon extends lua.shared.Reloading.ISSemiAutoWeapon {}
-
-  // [lua/shared/Reloading/ISShotgunWeapon.d.ts]
-  /** @customConstructor ISShotgunWeapon:new */
-  export class ISShotgunWeapon extends lua.shared.Reloading.ISShotgunWeapon {}
-
-  // [lua/shared/Reloading/stormysReload.d.ts]
-  export abstract class ReloadManager extends lua.shared.Reloading.ReloadManager {}
+  // [lua/shared/ProceduralBasements/basements.d.ts]
   /** @noSelf */
-  export const addShotgun: () => any;
+  export const loadMapBasementLuaFiles: () => any;
+
+  // [lua/shared/RecordedMedia/ISRecordedMedia.d.ts]
+  export abstract class ISRecordedMedia extends lua.shared.RecordedMedia.ISRecordedMedia {}
 
   // [lua/shared/SoundBanks/SoundBanks.d.ts]
   export abstract class ambientSoundTable extends lua.shared.SoundBanks.ambientSoundTable {}
@@ -8371,9 +8560,720 @@ declare module '@asledgehammer/pipewrench' {
   // [lua/shared/StashDescriptions/StashUtil.d.ts]
   export abstract class StashUtil extends lua.shared.StashDescriptions.StashUtil {}
 
+  // [lua/shared/TimedActions/Animals/ISAddAnimalInTrailer.d.ts]
+  /** @customConstructor ISAddAnimalInTrailer:new */
+  export class ISAddAnimalInTrailer extends lua.shared.TimedActions.Animals.ISAddAnimalInTrailer {}
+
+  // [lua/shared/TimedActions/Animals/ISAttachAnimalToPlayer.d.ts]
+  /** @customConstructor ISAttachAnimalToPlayer:new */
+  export class ISAttachAnimalToPlayer extends lua.shared.TimedActions.Animals.ISAttachAnimalToPlayer {}
+
+  // [lua/shared/TimedActions/Animals/ISAttachAnimalToTree.d.ts]
+  /** @customConstructor ISAttachAnimalToTree:new */
+  export class ISAttachAnimalToTree extends lua.shared.TimedActions.Animals.ISAttachAnimalToTree {}
+
+  // [lua/shared/TimedActions/Animals/ISButcherAnimal.d.ts]
+  /** @customConstructor ISButcherAnimal:new */
+  export class ISButcherAnimal extends lua.shared.TimedActions.Animals.ISButcherAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISCutAnimalOnHook.d.ts]
+  /** @customConstructor ISCutAnimalOnHook:new */
+  export class ISCutAnimalOnHook extends lua.shared.TimedActions.Animals.ISCutAnimalOnHook {}
+
+  // [lua/shared/TimedActions/Animals/ISFeedAnimalFromHand.d.ts]
+  /** @customConstructor ISFeedAnimalFromHand:new */
+  export class ISFeedAnimalFromHand extends lua.shared.TimedActions.Animals.ISFeedAnimalFromHand {}
+
+  // [lua/shared/TimedActions/Animals/ISGatherBloodFromAnimal.d.ts]
+  /** @customConstructor ISGatherBloodFromAnimal:new */
+  export class ISGatherBloodFromAnimal extends lua.shared.TimedActions.Animals.ISGatherBloodFromAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISGetAnimalBones.d.ts]
+  /** @customConstructor ISGetAnimalBones:new */
+  export class ISGetAnimalBones extends lua.shared.TimedActions.Animals.ISGetAnimalBones {}
+
+  // [lua/shared/TimedActions/Animals/ISGiveWaterToAnimal.d.ts]
+  /** @customConstructor ISGiveWaterToAnimal:new */
+  export class ISGiveWaterToAnimal extends lua.shared.TimedActions.Animals.ISGiveWaterToAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISHutchCleanFloor.d.ts]
+  /** @customConstructor ISHutchCleanFloor:new */
+  export class ISHutchCleanFloor extends lua.shared.TimedActions.Animals.ISHutchCleanFloor {}
+
+  // [lua/shared/TimedActions/Animals/ISHutchCleanNest.d.ts]
+  /** @customConstructor ISHutchCleanNest:new */
+  export class ISHutchCleanNest extends lua.shared.TimedActions.Animals.ISHutchCleanNest {}
+
+  // [lua/shared/TimedActions/Animals/ISHutchGrabAnimal.d.ts]
+  /** @customConstructor ISHutchGrabAnimal:new */
+  export class ISHutchGrabAnimal extends lua.shared.TimedActions.Animals.ISHutchGrabAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISHutchGrabCorpseAction.d.ts]
+  /** @customConstructor ISHutchGrabCorpseAction:new */
+  export class ISHutchGrabCorpseAction extends lua.shared.TimedActions.Animals.ISHutchGrabCorpseAction {}
+
+  // [lua/shared/TimedActions/Animals/ISHutchGrabEgg.d.ts]
+  /** @customConstructor ISHutchGrabEgg:new */
+  export class ISHutchGrabEgg extends lua.shared.TimedActions.Animals.ISHutchGrabEgg {}
+
+  // [lua/shared/TimedActions/Animals/ISKillAnimal.d.ts]
+  /** @customConstructor ISKillAnimal:new */
+  export class ISKillAnimal extends lua.shared.TimedActions.Animals.ISKillAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISLureAnimal.d.ts]
+  /** @customConstructor ISLureAnimal:new */
+  export class ISLureAnimal extends lua.shared.TimedActions.Animals.ISLureAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISMilkAnimal.d.ts]
+  /** @customConstructor ISMilkAnimal:new */
+  export class ISMilkAnimal extends lua.shared.TimedActions.Animals.ISMilkAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISOpenAnimalInfo.d.ts]
+  /** @customConstructor ISOpenAnimalInfo:new */
+  export class ISOpenAnimalInfo extends lua.shared.TimedActions.Animals.ISOpenAnimalInfo {}
+
+  // [lua/shared/TimedActions/Animals/ISOpenButcherHookUI.d.ts]
+  /** @customConstructor ISOpenButcherHookUI:new */
+  export class ISOpenButcherHookUI extends lua.shared.TimedActions.Animals.ISOpenButcherHookUI {}
+
+  // [lua/shared/TimedActions/Animals/ISPetAnimal.d.ts]
+  /** @customConstructor ISPetAnimal:new */
+  export class ISPetAnimal extends lua.shared.TimedActions.Animals.ISPetAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISPickupAnimal.d.ts]
+  /** @customConstructor ISPickupAnimal:new */
+  export class ISPickupAnimal extends lua.shared.TimedActions.Animals.ISPickupAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISPutAnimalInHutch.d.ts]
+  /** @customConstructor ISPutAnimalInHutch:new */
+  export class ISPutAnimalInHutch extends lua.shared.TimedActions.Animals.ISPutAnimalInHutch {}
+
+  // [lua/shared/TimedActions/Animals/ISPutAnimalOnHook.d.ts]
+  /** @customConstructor ISPutAnimalOnHook:new */
+  export class ISPutAnimalOnHook extends lua.shared.TimedActions.Animals.ISPutAnimalOnHook {}
+
+  // [lua/shared/TimedActions/Animals/ISRemoveAnimalFromHook.d.ts]
+  /** @customConstructor ISRemoveAnimalFromHook:new */
+  export class ISRemoveAnimalFromHook extends lua.shared.TimedActions.Animals.ISRemoveAnimalFromHook {}
+
+  // [lua/shared/TimedActions/Animals/ISRemoveAnimalFromTrailer.d.ts]
+  /** @customConstructor ISRemoveAnimalFromTrailer:new */
+  export class ISRemoveAnimalFromTrailer extends lua.shared.TimedActions.Animals.ISRemoveAnimalFromTrailer {}
+
+  // [lua/shared/TimedActions/Animals/ISRemoveHeadFromAnimal.d.ts]
+  /** @customConstructor ISRemoveHeadFromAnimal:new */
+  export class ISRemoveHeadFromAnimal extends lua.shared.TimedActions.Animals.ISRemoveHeadFromAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISRemoveLeatherFromAnimal.d.ts]
+  /** @customConstructor ISRemoveLeatherFromAnimal:new */
+  export class ISRemoveLeatherFromAnimal extends lua.shared.TimedActions.Animals.ISRemoveLeatherFromAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISRemoveMeatFromAnimal.d.ts]
+  /** @customConstructor ISRemoveMeatFromAnimal:new */
+  export class ISRemoveMeatFromAnimal extends lua.shared.TimedActions.Animals.ISRemoveMeatFromAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISShearAnimal.d.ts]
+  /** @customConstructor ISShearAnimal:new */
+  export class ISShearAnimal extends lua.shared.TimedActions.Animals.ISShearAnimal {}
+
+  // [lua/shared/TimedActions/Animals/ISToggleHutchDoor.d.ts]
+  /** @customConstructor ISToggleHutchDoor:new */
+  export class ISToggleHutchDoor extends lua.shared.TimedActions.Animals.ISToggleHutchDoor {}
+
+  // [lua/shared/TimedActions/Animals/ISToggleHutchEggHatchDoor.d.ts]
+  /** @customConstructor ISToggleHutchEggHatchDoor:new */
+  export class ISToggleHutchEggHatchDoor extends lua.shared.TimedActions.Animals.ISToggleHutchEggHatchDoor {}
+
+  // [lua/shared/TimedActions/Fishing/TimedActions/AddChumToWaterAction.d.ts]
+  /** @customConstructor AddChumToWaterAction:new */
+  export class AddChumToWaterAction extends lua.shared.TimedActions.Fishing.TimedActions.AddChumToWaterAction {}
+
+  // [lua/shared/TimedActions/Fishing/TimedActions/AIAttachLureAction.d.ts]
+  /** @customConstructor AIAttachLureAction:new */
+  export class AIAttachLureAction extends lua.shared.TimedActions.Fishing.TimedActions.AIAttachLureAction {}
+
+  // [lua/shared/TimedActions/Fishing/TimedActions/AIRemoveLureAction.d.ts]
+  /** @customConstructor AIRemoveLureAction:new */
+  export class AIRemoveLureAction extends lua.shared.TimedActions.Fishing.TimedActions.AIRemoveLureAction {}
+
+  // [lua/shared/TimedActions/Fishing/TimedActions/CreateChumFromGroundSandAction.d.ts]
+  /** @customConstructor CreateChumFromGroundSandAction:new */
+  export class CreateChumFromGroundSandAction extends lua.shared.TimedActions.Fishing.TimedActions
+    .CreateChumFromGroundSandAction {}
+
+  // [lua/shared/TimedActions/Fishing/TimedActions/ISAddBaitToFishNetAction.d.ts]
+  /** @customConstructor ISAddBaitToFishNetAction:new */
+  export class ISAddBaitToFishNetAction extends lua.shared.TimedActions.Fishing.TimedActions.ISAddBaitToFishNetAction {}
+
+  // [lua/shared/TimedActions/Fishing/TimedActions/ISChangeFishingRodEquip.d.ts]
+  /** @customConstructor ISChangeFishingRodEquip:new */
+  export class ISChangeFishingRodEquip extends lua.shared.TimedActions.Fishing.TimedActions.ISChangeFishingRodEquip {}
+
+  // [lua/shared/TimedActions/Fishing/TimedActions/ISCheckFishingNetAction.d.ts]
+  /** @customConstructor ISCheckFishingNetAction:new */
+  export class ISCheckFishingNetAction extends lua.shared.TimedActions.Fishing.TimedActions.ISCheckFishingNetAction {}
+
+  // [lua/shared/TimedActions/Fishing/TimedActions/ISPickupFishAction.d.ts]
+  /** @customConstructor ISPickupFishAction:new */
+  export class ISPickupFishAction extends lua.shared.TimedActions.Fishing.TimedActions.ISPickupFishAction {}
+
+  // [lua/shared/TimedActions/ISActivateCarBatteryChargerAction.d.ts]
+  /** @customConstructor ISActivateCarBatteryChargerAction:new */
+  export class ISActivateCarBatteryChargerAction extends lua.shared.TimedActions.ISActivateCarBatteryChargerAction {}
+
+  // [lua/shared/TimedActions/ISActivateGenerator.d.ts]
+  /** @customConstructor ISActivateGenerator:new */
+  export class ISActivateGenerator extends lua.shared.TimedActions.ISActivateGenerator {}
+
+  // [lua/shared/TimedActions/ISAddCompost.d.ts]
+  /** @customConstructor ISAddCompost:new */
+  export class ISAddCompost extends lua.shared.TimedActions.ISAddCompost {}
+
+  // [lua/shared/TimedActions/ISAddFuel.d.ts]
+  /** @customConstructor ISAddFuel:new */
+  export class ISAddFuel extends lua.shared.TimedActions.ISAddFuel {}
+
+  // [lua/shared/TimedActions/ISAddItemInRecipe.d.ts]
+  /** @customConstructor ISAddItemInRecipe:new */
+  export class ISAddItemInRecipe extends lua.shared.TimedActions.ISAddItemInRecipe {}
+
+  // [lua/shared/TimedActions/ISAddSheetAction.d.ts]
+  /** @customConstructor ISAddSheetAction:new */
+  export class ISAddSheetAction extends lua.shared.TimedActions.ISAddSheetAction {}
+
+  // [lua/shared/TimedActions/ISAddSheetRope.d.ts]
+  /** @customConstructor ISAddSheetRope:new */
+  export class ISAddSheetRope extends lua.shared.TimedActions.ISAddSheetRope {}
+
+  // [lua/shared/TimedActions/ISAddTakeDispenserBottle.d.ts]
+  /** @customConstructor ISAddTakeDispenserBottle:new */
+  export class ISAddTakeDispenserBottle extends lua.shared.TimedActions.ISAddTakeDispenserBottle {}
+
+  // [lua/shared/TimedActions/ISAddWaterFromItemAction.d.ts]
+  /** @customConstructor ISAddWaterFromItemAction:new */
+  export class ISAddWaterFromItemAction extends lua.shared.TimedActions.ISAddWaterFromItemAction {}
+
+  // [lua/shared/TimedActions/ISApplyBandage.d.ts]
+  /** @customConstructor ISApplyBandage:new */
+  export class ISApplyBandage extends lua.shared.TimedActions.ISApplyBandage {}
+
+  // [lua/shared/TimedActions/ISApplyMakeUp.d.ts]
+  /** @customConstructor ISApplyMakeUp:new */
+  export class ISApplyMakeUp extends lua.shared.TimedActions.ISApplyMakeUp {}
+
+  // [lua/shared/TimedActions/ISAttachItemHotbar.d.ts]
+  /** @customConstructor ISAttachItemHotbar:new */
+  export class ISAttachItemHotbar extends lua.shared.TimedActions.ISAttachItemHotbar {}
+
+  // [lua/shared/TimedActions/ISBarricadeAction.d.ts]
+  /** @customConstructor ISBarricadeAction:new */
+  export class ISBarricadeAction extends lua.shared.TimedActions.ISBarricadeAction {}
+
   // [lua/shared/TimedActions/ISBaseTimedAction.d.ts]
   /** @customConstructor ISBaseTimedAction:new */
   export class ISBaseTimedAction extends lua.shared.TimedActions.ISBaseTimedAction {}
+
+  // [lua/shared/TimedActions/ISBBQAddFuel.d.ts]
+  /** @customConstructor ISBBQAddFuel:new */
+  export class ISBBQAddFuel extends lua.shared.TimedActions.ISBBQAddFuel {}
+
+  // [lua/shared/TimedActions/ISBBQExtinguish.d.ts]
+  /** @customConstructor ISBBQExtinguish:new */
+  export class ISBBQExtinguish extends lua.shared.TimedActions.ISBBQExtinguish {}
+
+  // [lua/shared/TimedActions/ISBBQInsertPropaneTank.d.ts]
+  /** @customConstructor ISBBQInsertPropaneTank:new */
+  export class ISBBQInsertPropaneTank extends lua.shared.TimedActions.ISBBQInsertPropaneTank {}
+
+  // [lua/shared/TimedActions/ISBBQLightFromKindle.d.ts]
+  /** @customConstructor ISBBQLightFromKindle:new */
+  export class ISBBQLightFromKindle extends lua.shared.TimedActions.ISBBQLightFromKindle {}
+
+  // [lua/shared/TimedActions/ISBBQLightFromLiterature.d.ts]
+  /** @customConstructor ISBBQLightFromLiterature:new */
+  export class ISBBQLightFromLiterature extends lua.shared.TimedActions.ISBBQLightFromLiterature {}
+
+  // [lua/shared/TimedActions/ISBBQLightFromPetrol.d.ts]
+  /** @customConstructor ISBBQLightFromPetrol:new */
+  export class ISBBQLightFromPetrol extends lua.shared.TimedActions.ISBBQLightFromPetrol {}
+
+  // [lua/shared/TimedActions/ISBBQRemovePropaneTank.d.ts]
+  /** @customConstructor ISBBQRemovePropaneTank:new */
+  export class ISBBQRemovePropaneTank extends lua.shared.TimedActions.ISBBQRemovePropaneTank {}
+
+  // [lua/shared/TimedActions/ISBBQToggle.d.ts]
+  /** @customConstructor ISBBQToggle:new */
+  export class ISBBQToggle extends lua.shared.TimedActions.ISBBQToggle {}
+
+  // [lua/shared/TimedActions/ISBurnCorpseAction.d.ts]
+  /** @customConstructor ISBurnCorpseAction:new */
+  export class ISBurnCorpseAction extends lua.shared.TimedActions.ISBurnCorpseAction {}
+
+  // [lua/shared/TimedActions/ISBuryCorpse.d.ts]
+  /** @customConstructor ISBuryCorpse:new */
+  export class ISBuryCorpse extends lua.shared.TimedActions.ISBuryCorpse {}
+
+  // [lua/shared/TimedActions/ISChopTreeAction.d.ts]
+  /** @customConstructor ISChopTreeAction:new */
+  export class ISChopTreeAction extends lua.shared.TimedActions.ISChopTreeAction {}
+
+  // [lua/shared/TimedActions/ISCleanBandage.d.ts]
+  /** @customConstructor ISCleanBandage:new */
+  export class ISCleanBandage extends lua.shared.TimedActions.ISCleanBandage {}
+
+  // [lua/shared/TimedActions/ISCleanBlood.d.ts]
+  /** @customConstructor ISCleanBlood:new */
+  export class ISCleanBlood extends lua.shared.TimedActions.ISCleanBlood {}
+
+  // [lua/shared/TimedActions/ISCleanBurn.d.ts]
+  /** @customConstructor ISCleanBurn:new */
+  export class ISCleanBurn extends lua.shared.TimedActions.ISCleanBurn {}
+
+  // [lua/shared/TimedActions/ISCleanGraffiti.d.ts]
+  /** @customConstructor ISCleanGraffiti:new */
+  export class ISCleanGraffiti extends lua.shared.TimedActions.ISCleanGraffiti {}
+
+  // [lua/shared/TimedActions/ISClearAshes.d.ts]
+  /** @customConstructor ISClearAshes:new */
+  export class ISClearAshes extends lua.shared.TimedActions.ISClearAshes {}
+
+  // [lua/shared/TimedActions/ISComfreyCataplasm.d.ts]
+  /** @customConstructor ISComfreyCataplasm:new */
+  export class ISComfreyCataplasm extends lua.shared.TimedActions.ISComfreyCataplasm {}
+
+  // [lua/shared/TimedActions/ISConnectCarBatteryToChargerAction.d.ts]
+  /** @customConstructor ISConnectCarBatteryToChargerAction:new */
+  export class ISConnectCarBatteryToChargerAction extends lua.shared.TimedActions.ISConnectCarBatteryToChargerAction {}
+
+  // [lua/shared/TimedActions/ISConsolidateDrainable.d.ts]
+  /** @customConstructor ISConsolidateDrainable:new */
+  export class ISConsolidateDrainable extends lua.shared.TimedActions.ISConsolidateDrainable {}
+
+  // [lua/shared/TimedActions/ISCraftAction.d.ts]
+  /** @customConstructor ISCraftAction:new */
+  export class ISCraftAction extends lua.shared.TimedActions.ISCraftAction {}
+
+  // [lua/shared/TimedActions/ISCutHair.d.ts]
+  /** @customConstructor ISCutHair:new */
+  export class ISCutHair extends lua.shared.TimedActions.ISCutHair {}
+
+  // [lua/shared/TimedActions/ISDestroyStuffAction.d.ts]
+  /** @customConstructor ISDestroyStuffAction:new */
+  export class ISDestroyStuffAction extends lua.shared.TimedActions.ISDestroyStuffAction {}
+
+  // [lua/shared/TimedActions/ISDisinfect.d.ts]
+  /** @customConstructor ISDisinfect:new */
+  export class ISDisinfect extends lua.shared.TimedActions.ISDisinfect {}
+
+  // [lua/shared/TimedActions/ISDismantleAction.d.ts]
+  /** @customConstructor ISDismantleAction:new */
+  export class ISDismantleAction extends lua.shared.TimedActions.ISDismantleAction {}
+
+  // [lua/shared/TimedActions/ISDrinkFluidAction.d.ts]
+  /** @customConstructor ISDrinkFluidAction:new */
+  export class ISDrinkFluidAction extends lua.shared.TimedActions.ISDrinkFluidAction {}
+
+  // [lua/shared/TimedActions/ISDrinkFromBottle.d.ts]
+  /** @customConstructor ISDrinkFromBottle:new */
+  export class ISDrinkFromBottle extends lua.shared.TimedActions.ISDrinkFromBottle {}
+
+  // [lua/shared/TimedActions/ISDropCorpseAction.d.ts]
+  /** @customConstructor ISDropCorpseAction:new */
+  export class ISDropCorpseAction extends lua.shared.TimedActions.ISDropCorpseAction {}
+
+  // [lua/shared/TimedActions/ISDropWorldItemAction.d.ts]
+  /** @customConstructor ISDropWorldItemAction:new */
+  export class ISDropWorldItemAction extends lua.shared.TimedActions.ISDropWorldItemAction {}
+
+  // [lua/shared/TimedActions/ISDryMyself.d.ts]
+  /** @customConstructor ISDryMyself:new */
+  export class ISDryMyself extends lua.shared.TimedActions.ISDryMyself {}
+
+  // [lua/shared/TimedActions/ISDumpContentsAction.d.ts]
+  /** @customConstructor ISDumpContentsAction:new */
+  export class ISDumpContentsAction extends lua.shared.TimedActions.ISDumpContentsAction {}
+
+  // [lua/shared/TimedActions/ISDumpWaterAction.d.ts]
+  /** @customConstructor ISDumpWaterAction:new */
+  export class ISDumpWaterAction extends lua.shared.TimedActions.ISDumpWaterAction {}
+
+  // [lua/shared/TimedActions/ISDyeHair.d.ts]
+  /** @customConstructor ISDyeHair:new */
+  export class ISDyeHair extends lua.shared.TimedActions.ISDyeHair {}
+
+  // [lua/shared/TimedActions/ISEatFoodAction.d.ts]
+  /** @customConstructor ISEatFoodAction:new */
+  export class ISEatFoodAction extends lua.shared.TimedActions.ISEatFoodAction {}
+
+  // [lua/shared/TimedActions/ISEjectMagazine.d.ts]
+  /** @customConstructor ISEjectMagazine:new */
+  export class ISEjectMagazine extends lua.shared.TimedActions.ISEjectMagazine {}
+
+  // [lua/shared/TimedActions/ISEmptyRainBarrelAction.d.ts]
+  /** @customConstructor ISEmptyRainBarrelAction:new */
+  export class ISEmptyRainBarrelAction extends lua.shared.TimedActions.ISEmptyRainBarrelAction {}
+
+  // [lua/shared/TimedActions/ISEquipHeavyItem.d.ts]
+  /** @customConstructor ISEquipHeavyItem:new */
+  export class ISEquipHeavyItem extends lua.shared.TimedActions.ISEquipHeavyItem {}
+
+  // [lua/shared/TimedActions/ISEquipWeaponAction.d.ts]
+  /** @customConstructor ISEquipWeaponAction:new */
+  export class ISEquipWeaponAction extends lua.shared.TimedActions.ISEquipWeaponAction {}
+
+  // [lua/shared/TimedActions/ISFillGrave.d.ts]
+  /** @customConstructor ISFillGrave:new */
+  export class ISFillGrave extends lua.shared.TimedActions.ISFillGrave {}
+
+  // [lua/shared/TimedActions/ISFireplaceAddFuel.d.ts]
+  /** @customConstructor ISFireplaceAddFuel:new */
+  export class ISFireplaceAddFuel extends lua.shared.TimedActions.ISFireplaceAddFuel {}
+
+  // [lua/shared/TimedActions/ISFireplaceExtinguish.d.ts]
+  /** @customConstructor ISFireplaceExtinguish:new */
+  export class ISFireplaceExtinguish extends lua.shared.TimedActions.ISFireplaceExtinguish {}
+
+  // [lua/shared/TimedActions/ISFireplaceLightFromKindle.d.ts]
+  /** @customConstructor ISFireplaceLightFromKindle:new */
+  export class ISFireplaceLightFromKindle extends lua.shared.TimedActions.ISFireplaceLightFromKindle {}
+
+  // [lua/shared/TimedActions/ISFireplaceLightFromLiterature.d.ts]
+  /** @customConstructor ISFireplaceLightFromLiterature:new */
+  export class ISFireplaceLightFromLiterature extends lua.shared.TimedActions.ISFireplaceLightFromLiterature {}
+
+  // [lua/shared/TimedActions/ISFireplaceLightFromPetrol.d.ts]
+  /** @customConstructor ISFireplaceLightFromPetrol:new */
+  export class ISFireplaceLightFromPetrol extends lua.shared.TimedActions.ISFireplaceLightFromPetrol {}
+
+  // [lua/shared/TimedActions/ISFitnessAction.d.ts]
+  /** @customConstructor ISFitnessAction:new */
+  export class ISFitnessAction extends lua.shared.TimedActions.ISFitnessAction {}
+
+  // [lua/shared/TimedActions/ISFixAction.d.ts]
+  /** @customConstructor ISFixAction:new */
+  export class ISFixAction extends lua.shared.TimedActions.ISFixAction {}
+
+  // [lua/shared/TimedActions/ISFixGenerator.d.ts]
+  /** @customConstructor ISFixGenerator:new */
+  export class ISFixGenerator extends lua.shared.TimedActions.ISFixGenerator {}
+
+  // [lua/shared/TimedActions/ISFixVehiclePartAction.d.ts]
+  /** @customConstructor ISFixVehiclePartAction:new */
+  export class ISFixVehiclePartAction extends lua.shared.TimedActions.ISFixVehiclePartAction {}
+
+  // [lua/shared/TimedActions/ISGarlicCataplasm.d.ts]
+  /** @customConstructor ISGarlicCataplasm:new */
+  export class ISGarlicCataplasm extends lua.shared.TimedActions.ISGarlicCataplasm {}
+
+  // [lua/shared/TimedActions/ISGetCompost.d.ts]
+  /** @customConstructor ISGetCompost:new */
+  export class ISGetCompost extends lua.shared.TimedActions.ISGetCompost {}
+
+  // [lua/shared/TimedActions/ISGetOnBedAction.d.ts]
+  /** @customConstructor ISGetOnBedAction:new */
+  export class ISGetOnBedAction extends lua.shared.TimedActions.ISGetOnBedAction {}
+
+  // [lua/shared/TimedActions/ISGrabCorpseAction.d.ts]
+  /** @customConstructor ISGrabCorpseAction:new */
+  export class ISGrabCorpseAction extends lua.shared.TimedActions.ISGrabCorpseAction {}
+
+  // [lua/shared/TimedActions/ISHurricaneLanternExtinguish.d.ts]
+  /** @customConstructor ISHurricaneLanternExtinguish:new */
+  export class ISHurricaneLanternExtinguish extends lua.shared.TimedActions.ISHurricaneLanternExtinguish {}
+
+  // [lua/shared/TimedActions/ISInsertMagazine.d.ts]
+  /** @customConstructor ISInsertMagazine:new */
+  export class ISInsertMagazine extends lua.shared.TimedActions.ISInsertMagazine {}
+
+  // [lua/shared/TimedActions/ISLightActions.d.ts]
+  /** @customConstructor ISLightActions:new */
+  export class ISLightActions extends lua.shared.TimedActions.ISLightActions {}
+
+  // [lua/shared/TimedActions/ISLitCandleExtinguish.d.ts]
+  /** @customConstructor ISLitCandleExtinguish:new */
+  export class ISLitCandleExtinguish extends lua.shared.TimedActions.ISLitCandleExtinguish {}
+
+  // [lua/shared/TimedActions/ISLoadBulletsInMagazine.d.ts]
+  /** @customConstructor ISLoadBulletsInMagazine:new */
+  export class ISLoadBulletsInMagazine extends lua.shared.TimedActions.ISLoadBulletsInMagazine {}
+
+  // [lua/shared/TimedActions/ISLockDoor.d.ts]
+  /** @customConstructor ISLockDoor:new */
+  export class ISLockDoor extends lua.shared.TimedActions.ISLockDoor {}
+
+  // [lua/shared/TimedActions/ISOpenCloseCurtain.d.ts]
+  /** @customConstructor ISOpenCloseCurtain:new */
+  export class ISOpenCloseCurtain extends lua.shared.TimedActions.ISOpenCloseCurtain {}
+
+  // [lua/shared/TimedActions/ISOpenCloseDoor.d.ts]
+  /** @customConstructor ISOpenCloseDoor:new */
+  export class ISOpenCloseDoor extends lua.shared.TimedActions.ISOpenCloseDoor {}
+
+  // [lua/shared/TimedActions/ISOpenCloseWindow.d.ts]
+  /** @customConstructor ISOpenCloseWindow:new */
+  export class ISOpenCloseWindow extends lua.shared.TimedActions.ISOpenCloseWindow {}
+
+  // [lua/shared/TimedActions/ISPadlockAction.d.ts]
+  /** @customConstructor ISPadlockAction:new */
+  export class ISPadlockAction extends lua.shared.TimedActions.ISPadlockAction {}
+
+  // [lua/shared/TimedActions/ISPadlockByCodeAction.d.ts]
+  /** @customConstructor ISPadlockByCodeAction:new */
+  export class ISPadlockByCodeAction extends lua.shared.TimedActions.ISPadlockByCodeAction {}
+
+  // [lua/shared/TimedActions/ISPickupBrokenGlass.d.ts]
+  /** @customConstructor ISPickupBrokenGlass:new */
+  export class ISPickupBrokenGlass extends lua.shared.TimedActions.ISPickupBrokenGlass {}
+
+  // [lua/shared/TimedActions/ISPickupDung.d.ts]
+  /** @customConstructor ISPickupDung:new */
+  export class ISPickupDung extends lua.shared.TimedActions.ISPickupDung {}
+
+  // [lua/shared/TimedActions/ISPickUpGroundCoverItem.d.ts]
+  /** @customConstructor ISPickUpGroundCoverItem:new */
+  export class ISPickUpGroundCoverItem extends lua.shared.TimedActions.ISPickUpGroundCoverItem {}
+  export abstract class GroundCoverItems extends lua.shared.TimedActions.GroundCoverItems {}
+
+  // [lua/shared/TimedActions/ISPlaceCarBatteryChargerAction.d.ts]
+  /** @customConstructor ISPlaceCarBatteryChargerAction:new */
+  export class ISPlaceCarBatteryChargerAction extends lua.shared.TimedActions.ISPlaceCarBatteryChargerAction {}
+
+  // [lua/shared/TimedActions/ISPlaceTrap.d.ts]
+  /** @customConstructor ISPlaceTrap:new */
+  export class ISPlaceTrap extends lua.shared.TimedActions.ISPlaceTrap {}
+
+  // [lua/shared/TimedActions/ISPlantainCataplasm.d.ts]
+  /** @customConstructor ISPlantainCataplasm:new */
+  export class ISPlantainCataplasm extends lua.shared.TimedActions.ISPlantainCataplasm {}
+
+  // [lua/shared/TimedActions/ISPlugGenerator.d.ts]
+  /** @customConstructor ISPlugGenerator:new */
+  export class ISPlugGenerator extends lua.shared.TimedActions.ISPlugGenerator {}
+
+  // [lua/shared/TimedActions/ISPlumbItem.d.ts]
+  /** @customConstructor ISPlumbItem:new */
+  export class ISPlumbItem extends lua.shared.TimedActions.ISPlumbItem {}
+
+  // [lua/shared/TimedActions/ISPutOutFire.d.ts]
+  /** @customConstructor ISPutOutFire:new */
+  export class ISPutOutFire extends lua.shared.TimedActions.ISPutOutFire {}
+
+  // [lua/shared/TimedActions/ISRackFirearm.d.ts]
+  /** @customConstructor ISRackFirearm:new */
+  export class ISRackFirearm extends lua.shared.TimedActions.ISRackFirearm {}
+
+  // [lua/shared/TimedActions/ISReadABook.d.ts]
+  /** @customConstructor ISReadABook:new */
+  export class ISReadABook extends lua.shared.TimedActions.ISReadABook {}
+
+  // [lua/shared/TimedActions/ISReloadWeaponAction.d.ts]
+  /** @customConstructor ISReloadWeaponAction:new */
+  export class ISReloadWeaponAction extends lua.shared.TimedActions.ISReloadWeaponAction {}
+
+  // [lua/shared/TimedActions/ISRemoveBrokenGlass.d.ts]
+  /** @customConstructor ISRemoveBrokenGlass:new */
+  export class ISRemoveBrokenGlass extends lua.shared.TimedActions.ISRemoveBrokenGlass {}
+
+  // [lua/shared/TimedActions/ISRemoveBullet.d.ts]
+  /** @customConstructor ISRemoveBullet:new */
+  export class ISRemoveBullet extends lua.shared.TimedActions.ISRemoveBullet {}
+
+  // [lua/shared/TimedActions/ISRemoveBush.d.ts]
+  /** @customConstructor ISRemoveBush:new */
+  export class ISRemoveBush extends lua.shared.TimedActions.ISRemoveBush {}
+
+  // [lua/shared/TimedActions/ISRemoveCarBatteryFromChargerAction.d.ts]
+  /** @customConstructor ISRemoveCarBatteryFromChargerAction:new */
+  export class ISRemoveCarBatteryFromChargerAction extends lua.shared.TimedActions
+    .ISRemoveCarBatteryFromChargerAction {}
+
+  // [lua/shared/TimedActions/ISRemoveGlass.d.ts]
+  /** @customConstructor ISRemoveGlass:new */
+  export class ISRemoveGlass extends lua.shared.TimedActions.ISRemoveGlass {}
+
+  // [lua/shared/TimedActions/ISRemoveGrass.d.ts]
+  /** @customConstructor ISRemoveGrass:new */
+  export class ISRemoveGrass extends lua.shared.TimedActions.ISRemoveGrass {}
+
+  // [lua/shared/TimedActions/ISRemovePatch.d.ts]
+  /** @customConstructor ISRemovePatch:new */
+  export class ISRemovePatch extends lua.shared.TimedActions.ISRemovePatch {}
+
+  // [lua/shared/TimedActions/ISRemoveSheetAction.d.ts]
+  /** @customConstructor ISRemoveSheetAction:new */
+  export class ISRemoveSheetAction extends lua.shared.TimedActions.ISRemoveSheetAction {}
+
+  // [lua/shared/TimedActions/ISRemoveSheetRope.d.ts]
+  /** @customConstructor ISRemoveSheetRope:new */
+  export class ISRemoveSheetRope extends lua.shared.TimedActions.ISRemoveSheetRope {}
+
+  // [lua/shared/TimedActions/ISRemoveWeaponUpgrade.d.ts]
+  /** @customConstructor ISRemoveWeaponUpgrade:new */
+  export class ISRemoveWeaponUpgrade extends lua.shared.TimedActions.ISRemoveWeaponUpgrade {}
+
+  // [lua/shared/TimedActions/ISRepairClothing.d.ts]
+  /** @customConstructor ISRepairClothing:new */
+  export class ISRepairClothing extends lua.shared.TimedActions.ISRepairClothing {}
+
+  // [lua/shared/TimedActions/ISRestAction.d.ts]
+  /** @customConstructor ISRestAction:new */
+  export class ISRestAction extends lua.shared.TimedActions.ISRestAction {}
+
+  // [lua/shared/TimedActions/ISScything.d.ts]
+  /** @customConstructor ISScything:new */
+  export class ISScything extends lua.shared.TimedActions.ISScything {}
+
+  // [lua/shared/TimedActions/ISSetComboWasherDryerMode.d.ts]
+  /** @customConstructor ISSetComboWasherDryerMode:new */
+  export class ISSetComboWasherDryerMode extends lua.shared.TimedActions.ISSetComboWasherDryerMode {}
+
+  // [lua/shared/TimedActions/ISSitOnChairAction.d.ts]
+  /** @customConstructor ISSitOnChairAction:new */
+  export class ISSitOnChairAction extends lua.shared.TimedActions.ISSitOnChairAction {}
+
+  // [lua/shared/TimedActions/ISSitOnGround.d.ts]
+  /** @customConstructor ISSitOnGround:new */
+  export class ISSitOnGround extends lua.shared.TimedActions.ISSitOnGround {}
+
+  // [lua/shared/TimedActions/ISSmashWindow.d.ts]
+  /** @customConstructor ISSmashWindow:new */
+  export class ISSmashWindow extends lua.shared.TimedActions.ISSmashWindow {}
+
+  // [lua/shared/TimedActions/ISSplint.d.ts]
+  /** @customConstructor ISSplint:new */
+  export class ISSplint extends lua.shared.TimedActions.ISSplint {}
+
+  // [lua/shared/TimedActions/ISStitch.d.ts]
+  /** @customConstructor ISStitch:new */
+  export class ISStitch extends lua.shared.TimedActions.ISStitch {}
+
+  // [lua/shared/TimedActions/ISStopAlarmClockAction.d.ts]
+  /** @customConstructor ISStopAlarmClockAction:new */
+  export class ISStopAlarmClockAction extends lua.shared.TimedActions.ISStopAlarmClockAction {}
+
+  // [lua/shared/TimedActions/ISTakeCarBatteryChargerAction.d.ts]
+  /** @customConstructor ISTakeCarBatteryChargerAction:new */
+  export class ISTakeCarBatteryChargerAction extends lua.shared.TimedActions.ISTakeCarBatteryChargerAction {}
+
+  // [lua/shared/TimedActions/ISTakeFuel.d.ts]
+  /** @customConstructor ISTakeFuel:new */
+  export class ISTakeFuel extends lua.shared.TimedActions.ISTakeFuel {}
+
+  // [lua/shared/TimedActions/ISTakeGenerator.d.ts]
+  /** @customConstructor ISTakeGenerator:new */
+  export class ISTakeGenerator extends lua.shared.TimedActions.ISTakeGenerator {}
+
+  // [lua/shared/TimedActions/ISTakePillAction.d.ts]
+  /** @customConstructor ISTakePillAction:new */
+  export class ISTakePillAction extends lua.shared.TimedActions.ISTakePillAction {}
+
+  // [lua/shared/TimedActions/ISTakeTrap.d.ts]
+  /** @customConstructor ISTakeTrap:new */
+  export class ISTakeTrap extends lua.shared.TimedActions.ISTakeTrap {}
+
+  // [lua/shared/TimedActions/ISTakeWaterAction.d.ts]
+  /** @customConstructor ISTakeWaterAction:new */
+  export class ISTakeWaterAction extends lua.shared.TimedActions.ISTakeWaterAction {}
+
+  // [lua/shared/TimedActions/ISToggleClothingDryer.d.ts]
+  /** @customConstructor ISToggleClothingDryer:new */
+  export class ISToggleClothingDryer extends lua.shared.TimedActions.ISToggleClothingDryer {}
+
+  // [lua/shared/TimedActions/ISToggleClothingWasher.d.ts]
+  /** @customConstructor ISToggleClothingWasher:new */
+  export class ISToggleClothingWasher extends lua.shared.TimedActions.ISToggleClothingWasher {}
+
+  // [lua/shared/TimedActions/ISToggleComboWasherDryer.d.ts]
+  /** @customConstructor ISToggleComboWasherDryer:new */
+  export class ISToggleComboWasherDryer extends lua.shared.TimedActions.ISToggleComboWasherDryer {}
+
+  // [lua/shared/TimedActions/ISToggleLightAction.d.ts]
+  /** @customConstructor ISToggleLightAction:new */
+  export class ISToggleLightAction extends lua.shared.TimedActions.ISToggleLightAction {}
+
+  // [lua/shared/TimedActions/ISToggleStoveAction.d.ts]
+  /** @customConstructor ISToggleStoveAction:new */
+  export class ISToggleStoveAction extends lua.shared.TimedActions.ISToggleStoveAction {}
+
+  // [lua/shared/TimedActions/ISTransferAction.d.ts]
+  /** @customConstructor ISTransferAction:new */
+  export class ISTransferAction extends lua.shared.TimedActions.ISTransferAction {}
+
+  // [lua/shared/TimedActions/ISTransferWaterAction.d.ts]
+  /** @customConstructor ISTransferWaterAction:new */
+  export class ISTransferWaterAction extends lua.shared.TimedActions.ISTransferWaterAction {}
+
+  // [lua/shared/TimedActions/ISTrimBeard.d.ts]
+  /** @customConstructor ISTrimBeard:new */
+  export class ISTrimBeard extends lua.shared.TimedActions.ISTrimBeard {}
+
+  // [lua/shared/TimedActions/ISUnbarricadeAction.d.ts]
+  /** @customConstructor ISUnbarricadeAction:new */
+  export class ISUnbarricadeAction extends lua.shared.TimedActions.ISUnbarricadeAction {}
+
+  // [lua/shared/TimedActions/ISUnequipAction.d.ts]
+  /** @customConstructor ISUnequipAction:new */
+  export class ISUnequipAction extends lua.shared.TimedActions.ISUnequipAction {}
+
+  // [lua/shared/TimedActions/ISUnloadBulletsFromFirearm.d.ts]
+  /** @customConstructor ISUnloadBulletsFromFirearm:new */
+  export class ISUnloadBulletsFromFirearm extends lua.shared.TimedActions.ISUnloadBulletsFromFirearm {}
+
+  // [lua/shared/TimedActions/ISUnloadBulletsFromMagazine.d.ts]
+  /** @customConstructor ISUnloadBulletsFromMagazine:new */
+  export class ISUnloadBulletsFromMagazine extends lua.shared.TimedActions.ISUnloadBulletsFromMagazine {}
+
+  // [lua/shared/TimedActions/ISUpgradeWeapon.d.ts]
+  /** @customConstructor ISUpgradeWeapon:new */
+  export class ISUpgradeWeapon extends lua.shared.TimedActions.ISUpgradeWeapon {}
+
+  // [lua/shared/TimedActions/ISWaitWhileGettingUp.d.ts]
+  /** @customConstructor ISWaitWhileGettingUp:new */
+  export class ISWaitWhileGettingUp extends lua.shared.TimedActions.ISWaitWhileGettingUp {}
+
+  // [lua/shared/TimedActions/ISWakeOtherPlayer.d.ts]
+  /** @customConstructor ISWakeOtherPlayer:new */
+  export class ISWakeOtherPlayer extends lua.shared.TimedActions.ISWakeOtherPlayer {}
+
+  // [lua/shared/TimedActions/ISWashClothing.d.ts]
+  /** @customConstructor ISWashClothing:new */
+  export class ISWashClothing extends lua.shared.TimedActions.ISWashClothing {}
+
+  // [lua/shared/TimedActions/ISWashYourself.d.ts]
+  /** @customConstructor ISWashYourself:new */
+  export class ISWashYourself extends lua.shared.TimedActions.ISWashYourself {}
+
+  // [lua/shared/TimedActions/ISWearClothing.d.ts]
+  /** @customConstructor ISWearClothing:new */
+  export class ISWearClothing extends lua.shared.TimedActions.ISWearClothing {}
+  export abstract class WearClothingAnimations extends lua.shared.TimedActions.WearClothingAnimations {}
+
+  // [lua/shared/TimedActions/ISWringClothing.d.ts]
+  /** @customConstructor ISWringClothing:new */
+  export class ISWringClothing extends lua.shared.TimedActions.ISWringClothing {}
+
+  // [lua/shared/TimedActions/ISWriteSomething.d.ts]
+  /** @customConstructor ISWriteSomething:new */
+  export class ISWriteSomething extends lua.shared.TimedActions.ISWriteSomething {}
+
+  // [lua/shared/Traps/TimedActions/ISAddBaitAction.d.ts]
+  /** @customConstructor ISAddBaitAction:new */
+  export class ISAddBaitAction extends lua.shared.Traps.TimedActions.ISAddBaitAction {}
+
+  // [lua/shared/Traps/TimedActions/ISCheckTrapAction.d.ts]
+  /** @customConstructor ISCheckTrapAction:new */
+  export class ISCheckTrapAction extends lua.shared.Traps.TimedActions.ISCheckTrapAction {}
+
+  // [lua/shared/Traps/TimedActions/ISRemoveBaitAction.d.ts]
+  /** @customConstructor ISRemoveBaitAction:new */
+  export class ISRemoveBaitAction extends lua.shared.Traps.TimedActions.ISRemoveBaitAction {}
+
+  // [lua/shared/Traps/TimedActions/ISRemoveTrapAction.d.ts]
+  /** @customConstructor ISRemoveTrapAction:new */
+  export class ISRemoveTrapAction extends lua.shared.Traps.TimedActions.ISRemoveTrapAction {}
+
+  // [lua/shared/Traps/TrapSystem.d.ts]
+  export abstract class TrapSystem extends lua.shared.Traps.TrapSystem {}
 
   // [lua/shared/Util/AdjacentFreeTileFinder.d.ts]
   export abstract class AdjacentFreeTileFinder extends lua.shared.Util.AdjacentFreeTileFinder {}
@@ -8393,6 +9293,94 @@ declare module '@asledgehammer/pipewrench' {
 
   // [lua/shared/Util/StringReplacer.d.ts]
   export abstract class StringReplacer extends lua.shared.Util.StringReplacer {}
+
+  // [lua/shared/Vehicles/TimedActions/ISAddGasolineToVehicle.d.ts]
+  /** @customConstructor ISAddGasolineToVehicle:new */
+  export class ISAddGasolineToVehicle extends lua.shared.Vehicles.TimedActions.ISAddGasolineToVehicle {}
+
+  // [lua/shared/Vehicles/TimedActions/ISCloseVehicleDoor.d.ts]
+  /** @customConstructor ISCloseVehicleDoor:new */
+  export class ISCloseVehicleDoor extends lua.shared.Vehicles.TimedActions.ISCloseVehicleDoor {}
+
+  // [lua/shared/Vehicles/TimedActions/ISDeflateTire.d.ts]
+  /** @customConstructor ISDeflateTire:new */
+  export class ISDeflateTire extends lua.shared.Vehicles.TimedActions.ISDeflateTire {}
+
+  // [lua/shared/Vehicles/TimedActions/ISHotwireVehicle.d.ts]
+  /** @customConstructor ISHotwireVehicle:new */
+  export class ISHotwireVehicle extends lua.shared.Vehicles.TimedActions.ISHotwireVehicle {}
+
+  // [lua/shared/Vehicles/TimedActions/ISInflateTire.d.ts]
+  /** @customConstructor ISInflateTire:new */
+  export class ISInflateTire extends lua.shared.Vehicles.TimedActions.ISInflateTire {}
+
+  // [lua/shared/Vehicles/TimedActions/ISInstallVehiclePart.d.ts]
+  /** @customConstructor ISInstallVehiclePart:new */
+  export class ISInstallVehiclePart extends lua.shared.Vehicles.TimedActions.ISInstallVehiclePart {}
+
+  // [lua/shared/Vehicles/TimedActions/ISLockDoors.d.ts]
+  /** @customConstructor ISLockDoors:new */
+  export class ISLockDoors extends lua.shared.Vehicles.TimedActions.ISLockDoors {}
+
+  // [lua/shared/Vehicles/TimedActions/ISLockVehicleDoor.d.ts]
+  /** @customConstructor ISLockVehicleDoor:new */
+  export class ISLockVehicleDoor extends lua.shared.Vehicles.TimedActions.ISLockVehicleDoor {}
+
+  // [lua/shared/Vehicles/TimedActions/ISOpenCloseVehicleWindow.d.ts]
+  /** @customConstructor ISOpenCloseVehicleWindow:new */
+  export class ISOpenCloseVehicleWindow extends lua.shared.Vehicles.TimedActions.ISOpenCloseVehicleWindow {}
+
+  // [lua/shared/Vehicles/TimedActions/ISOpenVehicleDoor.d.ts]
+  /** @customConstructor ISOpenVehicleDoor:new */
+  export class ISOpenVehicleDoor extends lua.shared.Vehicles.TimedActions.ISOpenVehicleDoor {}
+
+  // [lua/shared/Vehicles/TimedActions/ISRefuelFromGasPump.d.ts]
+  /** @customConstructor ISRefuelFromGasPump:new */
+  export class ISRefuelFromGasPump extends lua.shared.Vehicles.TimedActions.ISRefuelFromGasPump {}
+
+  // [lua/shared/Vehicles/TimedActions/ISRemoveBurntVehicle.d.ts]
+  /** @customConstructor ISRemoveBurntVehicle:new */
+  export class ISRemoveBurntVehicle extends lua.shared.Vehicles.TimedActions.ISRemoveBurntVehicle {}
+
+  // [lua/shared/Vehicles/TimedActions/ISRepairEngine.d.ts]
+  /** @customConstructor ISRepairEngine:new */
+  export class ISRepairEngine extends lua.shared.Vehicles.TimedActions.ISRepairEngine {}
+
+  // [lua/shared/Vehicles/TimedActions/ISRepairLightbar.d.ts]
+  /** @customConstructor ISRepairLightbar:new */
+  export class ISRepairLightbar extends lua.shared.Vehicles.TimedActions.ISRepairLightbar {}
+
+  // [lua/shared/Vehicles/TimedActions/ISShutOffVehicleEngine.d.ts]
+  /** @customConstructor ISShutOffVehicleEngine:new */
+  export class ISShutOffVehicleEngine extends lua.shared.Vehicles.TimedActions.ISShutOffVehicleEngine {}
+
+  // [lua/shared/Vehicles/TimedActions/ISSmashVehicleWindow.d.ts]
+  /** @customConstructor ISSmashVehicleWindow:new */
+  export class ISSmashVehicleWindow extends lua.shared.Vehicles.TimedActions.ISSmashVehicleWindow {}
+
+  // [lua/shared/Vehicles/TimedActions/ISStartVehicleEngine.d.ts]
+  /** @customConstructor ISStartVehicleEngine:new */
+  export class ISStartVehicleEngine extends lua.shared.Vehicles.TimedActions.ISStartVehicleEngine {}
+
+  // [lua/shared/Vehicles/TimedActions/ISTakeEngineParts.d.ts]
+  /** @customConstructor ISTakeEngineParts:new */
+  export class ISTakeEngineParts extends lua.shared.Vehicles.TimedActions.ISTakeEngineParts {}
+
+  // [lua/shared/Vehicles/TimedActions/ISTakeGasolineFromVehicle.d.ts]
+  /** @customConstructor ISTakeGasolineFromVehicle:new */
+  export class ISTakeGasolineFromVehicle extends lua.shared.Vehicles.TimedActions.ISTakeGasolineFromVehicle {}
+
+  // [lua/shared/Vehicles/TimedActions/ISUninstallVehiclePart.d.ts]
+  /** @customConstructor ISUninstallVehiclePart:new */
+  export class ISUninstallVehiclePart extends lua.shared.Vehicles.TimedActions.ISUninstallVehiclePart {}
+
+  // [lua/shared/Vehicles/TimedActions/ISUnlockVehicleDoor.d.ts]
+  /** @customConstructor ISUnlockVehicleDoor:new */
+  export class ISUnlockVehicleDoor extends lua.shared.Vehicles.TimedActions.ISUnlockVehicleDoor {}
+
+  // [lua/shared/Vehicles/TimedActions/ISWashVehicle.d.ts]
+  /** @customConstructor ISWashVehicle:new */
+  export class ISWashVehicle extends lua.shared.Vehicles.TimedActions.ISWashVehicle {}
 
   // [LUA-PARTIAL:END]
 }

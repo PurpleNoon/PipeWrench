@@ -2293,8 +2293,66 @@ Exports.xp_Award = loadstring("return _G['xp_Award']")()
 -- [JAVA-PARTIAL:STOP]
 -- [LUA-PARTIAL:START]
 
+--[lua/shared/ActionManager.d.ts]
+Exports.Actions = loadstring("require('lua/shared/ActionManager');return _G['Actions']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISInsertLightSourceFuelAction.d.ts]
+Exports.ISInsertLightSourceFuelAction = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISInsertLightSourceFuelAction');return _G['ISInsertLightSourceFuelAction']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISMultiStageBuild.d.ts]
+Exports.ISMultiStageBuild = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISMultiStageBuild');return _G['ISMultiStageBuild']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISPaintAction.d.ts]
+Exports.ISPaintAction = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISPaintAction');return _G['ISPaintAction']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISPaintSignAction.d.ts]
+Exports.ISPaintSignAction = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISPaintSignAction');return _G['ISPaintSignAction']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISPlasterAction.d.ts]
+Exports.ISPlasterAction = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISPlasterAction');return _G['ISPlasterAction']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISRemoveLightSourceFuelAction.d.ts]
+Exports.ISRemoveLightSourceFuelAction = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISRemoveLightSourceFuelAction');return _G['ISRemoveLightSourceFuelAction']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISShovelGround.d.ts]
+Exports.ISShovelGround = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISShovelGround');return _G['ISShovelGround']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISToggleLightSourceAction.d.ts]
+Exports.ISToggleLightSourceAction = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISToggleLightSourceAction');return _G['ISToggleLightSourceAction']")()
+
+--[lua/shared/BuildingObjects/TimedActions/ISWallpaperAction.d.ts]
+Exports.ISWallpaperAction = loadstring("require('lua/shared/BuildingObjects/TimedActions/ISWallpaperAction');return _G['ISWallpaperAction']")()
+
+--[lua/shared/Camping/TimedActions/ISAddFuelAction.d.ts]
+Exports.ISAddFuelAction = loadstring("require('lua/shared/Camping/TimedActions/ISAddFuelAction');return _G['ISAddFuelAction']")()
+
+--[lua/shared/Camping/TimedActions/ISLightFromKindle.d.ts]
+Exports.ISLightFromKindle = loadstring("require('lua/shared/Camping/TimedActions/ISLightFromKindle');return _G['ISLightFromKindle']")()
+
+--[lua/shared/Camping/TimedActions/ISLightFromLiterature.d.ts]
+Exports.ISLightFromLiterature = loadstring("require('lua/shared/Camping/TimedActions/ISLightFromLiterature');return _G['ISLightFromLiterature']")()
+
+--[lua/shared/Camping/TimedActions/ISLightFromPetrol.d.ts]
+Exports.ISLightFromPetrol = loadstring("require('lua/shared/Camping/TimedActions/ISLightFromPetrol');return _G['ISLightFromPetrol']")()
+
+--[lua/shared/Camping/TimedActions/ISPutOutCampfireAction.d.ts]
+Exports.ISPutOutCampfireAction = loadstring("require('lua/shared/Camping/TimedActions/ISPutOutCampfireAction');return _G['ISPutOutCampfireAction']")()
+
+--[lua/shared/Camping/TimedActions/ISRemoveCampfireAction.d.ts]
+Exports.ISRemoveCampfireAction = loadstring("require('lua/shared/Camping/TimedActions/ISRemoveCampfireAction');return _G['ISRemoveCampfireAction']")()
+
 --[lua/shared/defines.d.ts]
+Exports.ZombiePopulationMultiplier = loadstring("require('lua/shared/defines');return _G['ZombiePopulationMultiplier']")()
+Exports.ZombiePopulationMultiplierTable = loadstring("require('lua/shared/defines');return _G['ZombiePopulationMultiplierTable']")()
+Exports.ZombiePopulationPeakMultiplier = loadstring("require('lua/shared/defines');return _G['ZombiePopulationPeakMultiplier']")()
+Exports.ZombiePopulationStartMultiplier = loadstring("require('lua/shared/defines');return _G['ZombiePopulationStartMultiplier']")()
 Exports.ZomboidGlobals = loadstring("require('lua/shared/defines');return _G['ZomboidGlobals']")()
+
+--[lua/shared/Definitions/animal/AnimalAvatarDefinition.d.ts]
+Exports.AnimalAvatarDefinition = loadstring("require('lua/shared/Definitions/animal/AnimalAvatarDefinition');return _G['AnimalAvatarDefinition']")()
+
+--[lua/shared/Definitions/animal/ButcheringUtil.d.ts]
+Exports.ButcheringUtil = loadstring("require('lua/shared/Definitions/animal/ButcheringUtil');return _G['ButcheringUtil']")()
 
 --[lua/shared/Definitions/ClothingRecipesDefinitions.d.ts]
 Exports.ClothingRecipesDefinitions = loadstring("require('lua/shared/Definitions/ClothingRecipesDefinitions');return _G['ClothingRecipesDefinitions']")()
@@ -2305,16 +2363,126 @@ Exports.DefaultClothing = loadstring("require('lua/shared/Definitions/DefaultClo
 --[lua/shared/Definitions/FitnessExercises.d.ts]
 Exports.FitnessExercises = loadstring("require('lua/shared/Definitions/FitnessExercises');return _G['FitnessExercises']")()
 
+--[lua/shared/Definitions/RandomTintDefinitions.d.ts]
+Exports.RandomTint = loadstring("require('lua/shared/Definitions/RandomTintDefinitions');return _G['RandomTint']")()
+
+--[lua/shared/Entity/TimedActions/ISCraftAnimAction.d.ts]
+Exports.ISCraftAnimAction = loadstring("require('lua/shared/Entity/TimedActions/ISCraftAnimAction');return _G['ISCraftAnimAction']")()
+
+--[lua/shared/Entity/TimedActions/ISGenericCraftStart.d.ts]
+Exports.ISGenericCraftStart = loadstring("require('lua/shared/Entity/TimedActions/ISGenericCraftStart');return _G['ISGenericCraftStart']")()
+
+--[lua/shared/Entity/TimedActions/ISHandcraftAction.d.ts]
+Exports.ISHandcraftAction = loadstring("require('lua/shared/Entity/TimedActions/ISHandcraftAction');return _G['ISHandcraftAction']")()
+
+--[lua/shared/Entity/TimedActions/ISItemSlotAddAction.d.ts]
+Exports.ISItemSlotAddAction = loadstring("require('lua/shared/Entity/TimedActions/ISItemSlotAddAction');return _G['ISItemSlotAddAction']")()
+
+--[lua/shared/Entity/TimedActions/ISItemSlotRemoveAction.d.ts]
+Exports.ISItemSlotRemoveAction = loadstring("require('lua/shared/Entity/TimedActions/ISItemSlotRemoveAction');return _G['ISItemSlotRemoveAction']")()
+
+--[lua/shared/Entity/TimedActions/ISStartCraftProcessorAction.d.ts]
+Exports.ISStartCraftProcessorAction = loadstring("require('lua/shared/Entity/TimedActions/ISStartCraftProcessorAction');return _G['ISStartCraftProcessorAction']")()
+
+--[lua/shared/Farming/TimedActions/ISCurePlantAction.d.ts]
+Exports.ISCurePlantAction = loadstring("require('lua/shared/Farming/TimedActions/ISCurePlantAction');return _G['ISCurePlantAction']")()
+
+--[lua/shared/Farming/TimedActions/ISFertilizeAction.d.ts]
+Exports.ISFertilizeAction = loadstring("require('lua/shared/Farming/TimedActions/ISFertilizeAction');return _G['ISFertilizeAction']")()
+
+--[lua/shared/Farming/TimedActions/ISHarvestPlantAction.d.ts]
+Exports.ISHarvestPlantAction = loadstring("require('lua/shared/Farming/TimedActions/ISHarvestPlantAction');return _G['ISHarvestPlantAction']")()
+
+--[lua/shared/Farming/TimedActions/ISPlowAction.d.ts]
+Exports.ISPlowAction = loadstring("require('lua/shared/Farming/TimedActions/ISPlowAction');return _G['ISPlowAction']")()
+
+--[lua/shared/Farming/TimedActions/ISSeedActionNew.d.ts]
+Exports.ISSeedActionNew = loadstring("require('lua/shared/Farming/TimedActions/ISSeedActionNew');return _G['ISSeedActionNew']")()
+
+--[lua/shared/Farming/TimedActions/ISShovelAction.d.ts]
+Exports.ISShovelAction = loadstring("require('lua/shared/Farming/TimedActions/ISShovelAction');return _G['ISShovelAction']")()
+
+--[lua/shared/Farming/TimedActions/ISWaterPlantAction.d.ts]
+Exports.ISWaterPlantAction = loadstring("require('lua/shared/Farming/TimedActions/ISWaterPlantAction');return _G['ISWaterPlantAction']")()
+
+--[lua/shared/FeedingTrough/TimedActions/ISAddWaterToTrough.d.ts]
+Exports.ISAddWaterToTrough = loadstring("require('lua/shared/FeedingTrough/TimedActions/ISAddWaterToTrough');return _G['ISAddWaterToTrough']")()
+
+--[lua/shared/FeedingTrough/TimedActions/ISEmptyWaterInTrough.d.ts]
+Exports.ISEmptyWaterInTrough = loadstring("require('lua/shared/FeedingTrough/TimedActions/ISEmptyWaterInTrough');return _G['ISEmptyWaterInTrough']")()
+
+--[lua/shared/Fishing/fishing_properties.d.ts]
+
+--[lua/shared/Fishing/FishingUtils.d.ts]
+
+--[lua/shared/Fluids/ISFluidContainer.d.ts]
+Exports.ISFluidContainer = loadstring("require('lua/shared/Fluids/ISFluidContainer');return _G['ISFluidContainer']")()
+
+--[lua/shared/Fluids/ISFluidEmptyAction.d.ts]
+Exports.ISFluidEmptyAction = loadstring("require('lua/shared/Fluids/ISFluidEmptyAction');return _G['ISFluidEmptyAction']")()
+
+--[lua/shared/Fluids/ISFluidTransferAction.d.ts]
+Exports.ISFluidTransferAction = loadstring("require('lua/shared/Fluids/ISFluidTransferAction');return _G['ISFluidTransferAction']")()
+
+--[lua/shared/Fluids/ISFluidUtil.d.ts]
+Exports.ISFluidUtil = loadstring("require('lua/shared/Fluids/ISFluidUtil');return _G['ISFluidUtil']")()
+
+--[lua/shared/Foraging/Categories/Ammo.d.ts]
+
+--[lua/shared/Foraging/Categories/Animals.d.ts]
+
+--[lua/shared/Foraging/Categories/Berries.d.ts]
+
+--[lua/shared/Foraging/Categories/Clothing.d.ts]
+
+--[lua/shared/Foraging/Categories/DeadAnimals.d.ts]
+
+--[lua/shared/Foraging/Categories/ForestGoods.d.ts]
+
+--[lua/shared/Foraging/Categories/ForestRarities.d.ts]
+
+--[lua/shared/Foraging/Categories/Fruits.d.ts]
+
+--[lua/shared/Foraging/Categories/Herbs.d.ts]
+
+--[lua/shared/Foraging/Categories/Insects.d.ts]
+
+--[lua/shared/Foraging/Categories/Junk.d.ts]
+
+--[lua/shared/Foraging/Categories/Medical.d.ts]
+
+--[lua/shared/Foraging/Categories/MedicinalPlants.d.ts]
+
+--[lua/shared/Foraging/Categories/Mushrooms.d.ts]
+
+--[lua/shared/Foraging/Categories/Stones.d.ts]
+
+--[lua/shared/Foraging/Categories/Vegetables.d.ts]
+
+--[lua/shared/Foraging/Categories/WildPlants.d.ts]
+
+--[lua/shared/Foraging/forageCategories.d.ts]
+Exports.forageCategories = loadstring("require('lua/shared/Foraging/forageCategories');return _G['forageCategories']")()
+
 --[lua/shared/Foraging/forageDefinitions.d.ts]
-Exports.forageCategories = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageCategories']")()
 Exports.forageDefaultDefs = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageDefaultDefs']")()
 Exports.forageDefs = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageDefs']")()
-Exports.forageSkills = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageSkills']")()
-Exports.forageZones = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageZones']")()
-Exports.scavenges = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['scavenges']")()
+
+--[lua/shared/Foraging/forageSkills.d.ts]
+Exports.forageSkills = loadstring("require('lua/shared/Foraging/forageSkills');return _G['forageSkills']")()
+Exports.forageZones = loadstring("require('lua/shared/Foraging/forageSkills');return _G['forageZones']")()
 
 --[lua/shared/Foraging/forageSystem.d.ts]
 Exports.forageSystem = loadstring("require('lua/shared/Foraging/forageSystem');return _G['forageSystem']")()
+
+--[lua/shared/Foraging/forageZones.d.ts]
+Exports.forageZones = loadstring("require('lua/shared/Foraging/forageZones');return _G['forageZones']")()
+
+--[lua/shared/Foraging/ISForageAction.d.ts]
+Exports.ISForageAction = loadstring("require('lua/shared/Foraging/ISForageAction');return _G['ISForageAction']")()
+
+--[lua/shared/Foraging/scavenges.d.ts]
+Exports.scavenges = loadstring("require('lua/shared/Foraging/scavenges');return _G['scavenges']")()
 
 --[lua/shared/ISBaseObject.d.ts]
 Exports.ISBaseObject = loadstring("require('lua/shared/ISBaseObject');return _G['ISBaseObject']")()
@@ -2340,45 +2508,31 @@ Exports.ISPerkLog = loadstring("require('lua/shared/Logs/ISPerkLog');return _G['
 --[lua/shared/luautils.d.ts]
 Exports.luautils = loadstring("require('lua/shared/luautils');return _G['luautils']")()
 
+--[lua/shared/Moveables/ISMoveableDefinitions.d.ts]
+Exports.ISMoveableDefinitions = loadstring("require('lua/shared/Moveables/ISMoveableDefinitions');return _G['ISMoveableDefinitions']")()
+
+--[lua/shared/Moveables/ISMoveablesAction.d.ts]
+Exports.ISMoveablesAction = loadstring("require('lua/shared/Moveables/ISMoveablesAction');return _G['ISMoveablesAction']")()
+
+--[lua/shared/Moveables/ISMoveableSpriteProps.d.ts]
+Exports.InfoPanelFlags = loadstring("require('lua/shared/Moveables/ISMoveableSpriteProps');return _G['InfoPanelFlags']")()
+Exports.ISMoveableSpriteProps = loadstring("require('lua/shared/Moveables/ISMoveableSpriteProps');return _G['ISMoveableSpriteProps']")()
+Exports.ISThumpableSpriteProps = loadstring("require('lua/shared/Moveables/ISMoveableSpriteProps');return _G['ISThumpableSpriteProps']")()
+Exports.SpriteGridCache = loadstring("require('lua/shared/Moveables/ISMoveableSpriteProps');return _G['SpriteGridCache']")()
+
+--[lua/shared/Moveables/ISMoveableTools.d.ts]
+Exports.ISMoveableTools = loadstring("require('lua/shared/Moveables/ISMoveableTools');return _G['ISMoveableTools']")()
+
 --[lua/shared/NPCs/MainCreationMethods.d.ts]
 Exports.BaseGameCharacterDetails = loadstring("require('lua/shared/NPCs/MainCreationMethods');return _G['BaseGameCharacterDetails']")()
 
---[lua/shared/RecordedMedia/ISRecordeMedia.d.ts]
-Exports.ISRecordedMedia = loadstring("require('lua/shared/RecordedMedia/ISRecordeMedia');return _G['ISRecordedMedia']")()
+--[lua/shared/PrintMedia/PrintMediaDefinitions.d.ts]
+Exports.PrintMediaDefinitions = loadstring("require('lua/shared/PrintMedia/PrintMediaDefinitions');return _G['PrintMediaDefinitions']")()
 
---[lua/shared/Reloading/ISRackAction.d.ts]
-Exports.ISRackAction = loadstring("require('lua/shared/Reloading/ISRackAction');return _G['ISRackAction']")()
+--[lua/shared/ProceduralBasements/basements.d.ts]
 
---[lua/shared/Reloading/ISReloadable.d.ts]
-Exports.ISReloadable = loadstring("require('lua/shared/Reloading/ISReloadable');return _G['ISReloadable']")()
-
---[lua/shared/Reloading/ISReloadableMagazine.d.ts]
-Exports.ISReloadableMagazine = loadstring("require('lua/shared/Reloading/ISReloadableMagazine');return _G['ISReloadableMagazine']")()
-
---[lua/shared/Reloading/ISReloadableWeapon.d.ts]
-Exports.ISReloadableWeapon = loadstring("require('lua/shared/Reloading/ISReloadableWeapon');return _G['ISReloadableWeapon']")()
-
---[lua/shared/Reloading/ISReloadAction.d.ts]
-Exports.ISReloadAction = loadstring("require('lua/shared/Reloading/ISReloadAction');return _G['ISReloadAction']")()
-
---[lua/shared/Reloading/ISReloadManager.d.ts]
-Exports.ISReloadManager = loadstring("require('lua/shared/Reloading/ISReloadManager');return _G['ISReloadManager']")()
-Exports.aaa = loadstring("require('lua/shared/Reloading/ISReloadManager');return _G['aaa']")()
-
---[lua/shared/Reloading/ISReloadUtil.d.ts]
-Exports.ISReloadUtil = loadstring("require('lua/shared/Reloading/ISReloadUtil');return _G['ISReloadUtil']")()
-
---[lua/shared/Reloading/ISRevolverWeapon.d.ts]
-Exports.ISRevolverWeapon = loadstring("require('lua/shared/Reloading/ISRevolverWeapon');return _G['ISRevolverWeapon']")()
-
---[lua/shared/Reloading/ISSemiAutoWeapon.d.ts]
-Exports.ISSemiAutoWeapon = loadstring("require('lua/shared/Reloading/ISSemiAutoWeapon');return _G['ISSemiAutoWeapon']")()
-
---[lua/shared/Reloading/ISShotgunWeapon.d.ts]
-Exports.ISShotgunWeapon = loadstring("require('lua/shared/Reloading/ISShotgunWeapon');return _G['ISShotgunWeapon']")()
-
---[lua/shared/Reloading/stormysReload.d.ts]
-Exports.ReloadManager = loadstring("require('lua/shared/Reloading/stormysReload');return _G['ReloadManager']")()
+--[lua/shared/RecordedMedia/ISRecordedMedia.d.ts]
+Exports.ISRecordedMedia = loadstring("require('lua/shared/RecordedMedia/ISRecordedMedia');return _G['ISRecordedMedia']")()
 
 --[lua/shared/SoundBanks/SoundBanks.d.ts]
 Exports.ambientSoundTable = loadstring("require('lua/shared/SoundBanks/SoundBanks');return _G['ambientSoundTable']")()
@@ -2393,8 +2547,541 @@ Exports.SpawnRegionMgr = loadstring("require('lua/shared/SpawnRegions');return _
 --[lua/shared/StashDescriptions/StashUtil.d.ts]
 Exports.StashUtil = loadstring("require('lua/shared/StashDescriptions/StashUtil');return _G['StashUtil']")()
 
+--[lua/shared/TimedActions/Animals/ISAddAnimalInTrailer.d.ts]
+Exports.ISAddAnimalInTrailer = loadstring("require('lua/shared/TimedActions/Animals/ISAddAnimalInTrailer');return _G['ISAddAnimalInTrailer']")()
+
+--[lua/shared/TimedActions/Animals/ISAttachAnimalToPlayer.d.ts]
+Exports.ISAttachAnimalToPlayer = loadstring("require('lua/shared/TimedActions/Animals/ISAttachAnimalToPlayer');return _G['ISAttachAnimalToPlayer']")()
+
+--[lua/shared/TimedActions/Animals/ISAttachAnimalToTree.d.ts]
+Exports.ISAttachAnimalToTree = loadstring("require('lua/shared/TimedActions/Animals/ISAttachAnimalToTree');return _G['ISAttachAnimalToTree']")()
+
+--[lua/shared/TimedActions/Animals/ISButcherAnimal.d.ts]
+Exports.ISButcherAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISButcherAnimal');return _G['ISButcherAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISCutAnimalOnHook.d.ts]
+Exports.ISCutAnimalOnHook = loadstring("require('lua/shared/TimedActions/Animals/ISCutAnimalOnHook');return _G['ISCutAnimalOnHook']")()
+
+--[lua/shared/TimedActions/Animals/ISFeedAnimalFromHand.d.ts]
+Exports.ISFeedAnimalFromHand = loadstring("require('lua/shared/TimedActions/Animals/ISFeedAnimalFromHand');return _G['ISFeedAnimalFromHand']")()
+
+--[lua/shared/TimedActions/Animals/ISGatherBloodFromAnimal.d.ts]
+Exports.ISGatherBloodFromAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISGatherBloodFromAnimal');return _G['ISGatherBloodFromAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISGetAnimalBones.d.ts]
+Exports.ISGetAnimalBones = loadstring("require('lua/shared/TimedActions/Animals/ISGetAnimalBones');return _G['ISGetAnimalBones']")()
+
+--[lua/shared/TimedActions/Animals/ISGiveWaterToAnimal.d.ts]
+Exports.ISGiveWaterToAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISGiveWaterToAnimal');return _G['ISGiveWaterToAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISHutchCleanFloor.d.ts]
+Exports.ISHutchCleanFloor = loadstring("require('lua/shared/TimedActions/Animals/ISHutchCleanFloor');return _G['ISHutchCleanFloor']")()
+
+--[lua/shared/TimedActions/Animals/ISHutchCleanNest.d.ts]
+Exports.ISHutchCleanNest = loadstring("require('lua/shared/TimedActions/Animals/ISHutchCleanNest');return _G['ISHutchCleanNest']")()
+
+--[lua/shared/TimedActions/Animals/ISHutchGrabAnimal.d.ts]
+Exports.ISHutchGrabAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISHutchGrabAnimal');return _G['ISHutchGrabAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISHutchGrabCorpseAction.d.ts]
+Exports.ISHutchGrabCorpseAction = loadstring("require('lua/shared/TimedActions/Animals/ISHutchGrabCorpseAction');return _G['ISHutchGrabCorpseAction']")()
+
+--[lua/shared/TimedActions/Animals/ISHutchGrabEgg.d.ts]
+Exports.ISHutchGrabEgg = loadstring("require('lua/shared/TimedActions/Animals/ISHutchGrabEgg');return _G['ISHutchGrabEgg']")()
+
+--[lua/shared/TimedActions/Animals/ISKillAnimal.d.ts]
+Exports.ISKillAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISKillAnimal');return _G['ISKillAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISLureAnimal.d.ts]
+Exports.ISLureAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISLureAnimal');return _G['ISLureAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISMilkAnimal.d.ts]
+Exports.ISMilkAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISMilkAnimal');return _G['ISMilkAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISOpenAnimalInfo.d.ts]
+Exports.ISOpenAnimalInfo = loadstring("require('lua/shared/TimedActions/Animals/ISOpenAnimalInfo');return _G['ISOpenAnimalInfo']")()
+
+--[lua/shared/TimedActions/Animals/ISOpenButcherHookUI.d.ts]
+Exports.ISOpenButcherHookUI = loadstring("require('lua/shared/TimedActions/Animals/ISOpenButcherHookUI');return _G['ISOpenButcherHookUI']")()
+
+--[lua/shared/TimedActions/Animals/ISPetAnimal.d.ts]
+Exports.ISPetAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISPetAnimal');return _G['ISPetAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISPickupAnimal.d.ts]
+Exports.ISPickupAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISPickupAnimal');return _G['ISPickupAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISPutAnimalInHutch.d.ts]
+Exports.ISPutAnimalInHutch = loadstring("require('lua/shared/TimedActions/Animals/ISPutAnimalInHutch');return _G['ISPutAnimalInHutch']")()
+
+--[lua/shared/TimedActions/Animals/ISPutAnimalOnHook.d.ts]
+Exports.ISPutAnimalOnHook = loadstring("require('lua/shared/TimedActions/Animals/ISPutAnimalOnHook');return _G['ISPutAnimalOnHook']")()
+
+--[lua/shared/TimedActions/Animals/ISRemoveAnimalFromHook.d.ts]
+Exports.ISRemoveAnimalFromHook = loadstring("require('lua/shared/TimedActions/Animals/ISRemoveAnimalFromHook');return _G['ISRemoveAnimalFromHook']")()
+
+--[lua/shared/TimedActions/Animals/ISRemoveAnimalFromTrailer.d.ts]
+Exports.ISRemoveAnimalFromTrailer = loadstring("require('lua/shared/TimedActions/Animals/ISRemoveAnimalFromTrailer');return _G['ISRemoveAnimalFromTrailer']")()
+
+--[lua/shared/TimedActions/Animals/ISRemoveHeadFromAnimal.d.ts]
+Exports.ISRemoveHeadFromAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISRemoveHeadFromAnimal');return _G['ISRemoveHeadFromAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISRemoveLeatherFromAnimal.d.ts]
+Exports.ISRemoveLeatherFromAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISRemoveLeatherFromAnimal');return _G['ISRemoveLeatherFromAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISRemoveMeatFromAnimal.d.ts]
+Exports.ISRemoveMeatFromAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISRemoveMeatFromAnimal');return _G['ISRemoveMeatFromAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISShearAnimal.d.ts]
+Exports.ISShearAnimal = loadstring("require('lua/shared/TimedActions/Animals/ISShearAnimal');return _G['ISShearAnimal']")()
+
+--[lua/shared/TimedActions/Animals/ISToggleHutchDoor.d.ts]
+Exports.ISToggleHutchDoor = loadstring("require('lua/shared/TimedActions/Animals/ISToggleHutchDoor');return _G['ISToggleHutchDoor']")()
+
+--[lua/shared/TimedActions/Animals/ISToggleHutchEggHatchDoor.d.ts]
+Exports.ISToggleHutchEggHatchDoor = loadstring("require('lua/shared/TimedActions/Animals/ISToggleHutchEggHatchDoor');return _G['ISToggleHutchEggHatchDoor']")()
+
+--[lua/shared/TimedActions/Fishing/TimedActions/AddChumToWaterAction.d.ts]
+Exports.AddChumToWaterAction = loadstring("require('lua/shared/TimedActions/Fishing/TimedActions/AddChumToWaterAction');return _G['AddChumToWaterAction']")()
+
+--[lua/shared/TimedActions/Fishing/TimedActions/AIAttachLureAction.d.ts]
+Exports.AIAttachLureAction = loadstring("require('lua/shared/TimedActions/Fishing/TimedActions/AIAttachLureAction');return _G['AIAttachLureAction']")()
+
+--[lua/shared/TimedActions/Fishing/TimedActions/AIRemoveLureAction.d.ts]
+Exports.AIRemoveLureAction = loadstring("require('lua/shared/TimedActions/Fishing/TimedActions/AIRemoveLureAction');return _G['AIRemoveLureAction']")()
+
+--[lua/shared/TimedActions/Fishing/TimedActions/CreateChumFromGroundSandAction.d.ts]
+Exports.CreateChumFromGroundSandAction = loadstring("require('lua/shared/TimedActions/Fishing/TimedActions/CreateChumFromGroundSandAction');return _G['CreateChumFromGroundSandAction']")()
+
+--[lua/shared/TimedActions/Fishing/TimedActions/ISAddBaitToFishNetAction.d.ts]
+Exports.ISAddBaitToFishNetAction = loadstring("require('lua/shared/TimedActions/Fishing/TimedActions/ISAddBaitToFishNetAction');return _G['ISAddBaitToFishNetAction']")()
+
+--[lua/shared/TimedActions/Fishing/TimedActions/ISChangeFishingRodEquip.d.ts]
+Exports.ISChangeFishingRodEquip = loadstring("require('lua/shared/TimedActions/Fishing/TimedActions/ISChangeFishingRodEquip');return _G['ISChangeFishingRodEquip']")()
+
+--[lua/shared/TimedActions/Fishing/TimedActions/ISCheckFishingNetAction.d.ts]
+Exports.ISCheckFishingNetAction = loadstring("require('lua/shared/TimedActions/Fishing/TimedActions/ISCheckFishingNetAction');return _G['ISCheckFishingNetAction']")()
+
+--[lua/shared/TimedActions/Fishing/TimedActions/ISPickupFishAction.d.ts]
+Exports.ISPickupFishAction = loadstring("require('lua/shared/TimedActions/Fishing/TimedActions/ISPickupFishAction');return _G['ISPickupFishAction']")()
+
+--[lua/shared/TimedActions/ISActivateCarBatteryChargerAction.d.ts]
+Exports.ISActivateCarBatteryChargerAction = loadstring("require('lua/shared/TimedActions/ISActivateCarBatteryChargerAction');return _G['ISActivateCarBatteryChargerAction']")()
+
+--[lua/shared/TimedActions/ISActivateGenerator.d.ts]
+Exports.ISActivateGenerator = loadstring("require('lua/shared/TimedActions/ISActivateGenerator');return _G['ISActivateGenerator']")()
+
+--[lua/shared/TimedActions/ISAddCompost.d.ts]
+Exports.ISAddCompost = loadstring("require('lua/shared/TimedActions/ISAddCompost');return _G['ISAddCompost']")()
+
+--[lua/shared/TimedActions/ISAddFuel.d.ts]
+Exports.ISAddFuel = loadstring("require('lua/shared/TimedActions/ISAddFuel');return _G['ISAddFuel']")()
+
+--[lua/shared/TimedActions/ISAddItemInRecipe.d.ts]
+Exports.ISAddItemInRecipe = loadstring("require('lua/shared/TimedActions/ISAddItemInRecipe');return _G['ISAddItemInRecipe']")()
+
+--[lua/shared/TimedActions/ISAddSheetAction.d.ts]
+Exports.ISAddSheetAction = loadstring("require('lua/shared/TimedActions/ISAddSheetAction');return _G['ISAddSheetAction']")()
+
+--[lua/shared/TimedActions/ISAddSheetRope.d.ts]
+Exports.ISAddSheetRope = loadstring("require('lua/shared/TimedActions/ISAddSheetRope');return _G['ISAddSheetRope']")()
+
+--[lua/shared/TimedActions/ISAddTakeDispenserBottle.d.ts]
+Exports.ISAddTakeDispenserBottle = loadstring("require('lua/shared/TimedActions/ISAddTakeDispenserBottle');return _G['ISAddTakeDispenserBottle']")()
+
+--[lua/shared/TimedActions/ISAddWaterFromItemAction.d.ts]
+Exports.ISAddWaterFromItemAction = loadstring("require('lua/shared/TimedActions/ISAddWaterFromItemAction');return _G['ISAddWaterFromItemAction']")()
+
+--[lua/shared/TimedActions/ISApplyBandage.d.ts]
+Exports.ISApplyBandage = loadstring("require('lua/shared/TimedActions/ISApplyBandage');return _G['ISApplyBandage']")()
+
+--[lua/shared/TimedActions/ISApplyMakeUp.d.ts]
+Exports.ISApplyMakeUp = loadstring("require('lua/shared/TimedActions/ISApplyMakeUp');return _G['ISApplyMakeUp']")()
+
+--[lua/shared/TimedActions/ISAttachItemHotbar.d.ts]
+Exports.ISAttachItemHotbar = loadstring("require('lua/shared/TimedActions/ISAttachItemHotbar');return _G['ISAttachItemHotbar']")()
+
+--[lua/shared/TimedActions/ISBarricadeAction.d.ts]
+Exports.ISBarricadeAction = loadstring("require('lua/shared/TimedActions/ISBarricadeAction');return _G['ISBarricadeAction']")()
+
 --[lua/shared/TimedActions/ISBaseTimedAction.d.ts]
 Exports.ISBaseTimedAction = loadstring("require('lua/shared/TimedActions/ISBaseTimedAction');return _G['ISBaseTimedAction']")()
+
+--[lua/shared/TimedActions/ISBBQAddFuel.d.ts]
+Exports.ISBBQAddFuel = loadstring("require('lua/shared/TimedActions/ISBBQAddFuel');return _G['ISBBQAddFuel']")()
+
+--[lua/shared/TimedActions/ISBBQExtinguish.d.ts]
+Exports.ISBBQExtinguish = loadstring("require('lua/shared/TimedActions/ISBBQExtinguish');return _G['ISBBQExtinguish']")()
+
+--[lua/shared/TimedActions/ISBBQInsertPropaneTank.d.ts]
+Exports.ISBBQInsertPropaneTank = loadstring("require('lua/shared/TimedActions/ISBBQInsertPropaneTank');return _G['ISBBQInsertPropaneTank']")()
+
+--[lua/shared/TimedActions/ISBBQLightFromKindle.d.ts]
+Exports.ISBBQLightFromKindle = loadstring("require('lua/shared/TimedActions/ISBBQLightFromKindle');return _G['ISBBQLightFromKindle']")()
+
+--[lua/shared/TimedActions/ISBBQLightFromLiterature.d.ts]
+Exports.ISBBQLightFromLiterature = loadstring("require('lua/shared/TimedActions/ISBBQLightFromLiterature');return _G['ISBBQLightFromLiterature']")()
+
+--[lua/shared/TimedActions/ISBBQLightFromPetrol.d.ts]
+Exports.ISBBQLightFromPetrol = loadstring("require('lua/shared/TimedActions/ISBBQLightFromPetrol');return _G['ISBBQLightFromPetrol']")()
+
+--[lua/shared/TimedActions/ISBBQRemovePropaneTank.d.ts]
+Exports.ISBBQRemovePropaneTank = loadstring("require('lua/shared/TimedActions/ISBBQRemovePropaneTank');return _G['ISBBQRemovePropaneTank']")()
+
+--[lua/shared/TimedActions/ISBBQToggle.d.ts]
+Exports.ISBBQToggle = loadstring("require('lua/shared/TimedActions/ISBBQToggle');return _G['ISBBQToggle']")()
+
+--[lua/shared/TimedActions/ISBurnCorpseAction.d.ts]
+Exports.ISBurnCorpseAction = loadstring("require('lua/shared/TimedActions/ISBurnCorpseAction');return _G['ISBurnCorpseAction']")()
+
+--[lua/shared/TimedActions/ISBuryCorpse.d.ts]
+Exports.ISBuryCorpse = loadstring("require('lua/shared/TimedActions/ISBuryCorpse');return _G['ISBuryCorpse']")()
+
+--[lua/shared/TimedActions/ISChopTreeAction.d.ts]
+Exports.ISChopTreeAction = loadstring("require('lua/shared/TimedActions/ISChopTreeAction');return _G['ISChopTreeAction']")()
+
+--[lua/shared/TimedActions/ISCleanBandage.d.ts]
+Exports.ISCleanBandage = loadstring("require('lua/shared/TimedActions/ISCleanBandage');return _G['ISCleanBandage']")()
+
+--[lua/shared/TimedActions/ISCleanBlood.d.ts]
+Exports.ISCleanBlood = loadstring("require('lua/shared/TimedActions/ISCleanBlood');return _G['ISCleanBlood']")()
+
+--[lua/shared/TimedActions/ISCleanBurn.d.ts]
+Exports.ISCleanBurn = loadstring("require('lua/shared/TimedActions/ISCleanBurn');return _G['ISCleanBurn']")()
+
+--[lua/shared/TimedActions/ISCleanGraffiti.d.ts]
+Exports.ISCleanGraffiti = loadstring("require('lua/shared/TimedActions/ISCleanGraffiti');return _G['ISCleanGraffiti']")()
+
+--[lua/shared/TimedActions/ISClearAshes.d.ts]
+Exports.ISClearAshes = loadstring("require('lua/shared/TimedActions/ISClearAshes');return _G['ISClearAshes']")()
+
+--[lua/shared/TimedActions/ISComfreyCataplasm.d.ts]
+Exports.ISComfreyCataplasm = loadstring("require('lua/shared/TimedActions/ISComfreyCataplasm');return _G['ISComfreyCataplasm']")()
+
+--[lua/shared/TimedActions/ISConnectCarBatteryToChargerAction.d.ts]
+Exports.ISConnectCarBatteryToChargerAction = loadstring("require('lua/shared/TimedActions/ISConnectCarBatteryToChargerAction');return _G['ISConnectCarBatteryToChargerAction']")()
+
+--[lua/shared/TimedActions/ISConsolidateDrainable.d.ts]
+Exports.ISConsolidateDrainable = loadstring("require('lua/shared/TimedActions/ISConsolidateDrainable');return _G['ISConsolidateDrainable']")()
+
+--[lua/shared/TimedActions/ISCraftAction.d.ts]
+Exports.ISCraftAction = loadstring("require('lua/shared/TimedActions/ISCraftAction');return _G['ISCraftAction']")()
+
+--[lua/shared/TimedActions/ISCutHair.d.ts]
+Exports.ISCutHair = loadstring("require('lua/shared/TimedActions/ISCutHair');return _G['ISCutHair']")()
+
+--[lua/shared/TimedActions/ISDestroyStuffAction.d.ts]
+Exports.ISDestroyStuffAction = loadstring("require('lua/shared/TimedActions/ISDestroyStuffAction');return _G['ISDestroyStuffAction']")()
+
+--[lua/shared/TimedActions/ISDisinfect.d.ts]
+Exports.ISDisinfect = loadstring("require('lua/shared/TimedActions/ISDisinfect');return _G['ISDisinfect']")()
+
+--[lua/shared/TimedActions/ISDismantleAction.d.ts]
+Exports.ISDismantleAction = loadstring("require('lua/shared/TimedActions/ISDismantleAction');return _G['ISDismantleAction']")()
+
+--[lua/shared/TimedActions/ISDrinkFluidAction.d.ts]
+Exports.ISDrinkFluidAction = loadstring("require('lua/shared/TimedActions/ISDrinkFluidAction');return _G['ISDrinkFluidAction']")()
+
+--[lua/shared/TimedActions/ISDrinkFromBottle.d.ts]
+Exports.ISDrinkFromBottle = loadstring("require('lua/shared/TimedActions/ISDrinkFromBottle');return _G['ISDrinkFromBottle']")()
+
+--[lua/shared/TimedActions/ISDropCorpseAction.d.ts]
+Exports.ISDropCorpseAction = loadstring("require('lua/shared/TimedActions/ISDropCorpseAction');return _G['ISDropCorpseAction']")()
+
+--[lua/shared/TimedActions/ISDropWorldItemAction.d.ts]
+Exports.ISDropWorldItemAction = loadstring("require('lua/shared/TimedActions/ISDropWorldItemAction');return _G['ISDropWorldItemAction']")()
+
+--[lua/shared/TimedActions/ISDryMyself.d.ts]
+Exports.ISDryMyself = loadstring("require('lua/shared/TimedActions/ISDryMyself');return _G['ISDryMyself']")()
+
+--[lua/shared/TimedActions/ISDumpContentsAction.d.ts]
+Exports.ISDumpContentsAction = loadstring("require('lua/shared/TimedActions/ISDumpContentsAction');return _G['ISDumpContentsAction']")()
+
+--[lua/shared/TimedActions/ISDumpWaterAction.d.ts]
+Exports.ISDumpWaterAction = loadstring("require('lua/shared/TimedActions/ISDumpWaterAction');return _G['ISDumpWaterAction']")()
+
+--[lua/shared/TimedActions/ISDyeHair.d.ts]
+Exports.ISDyeHair = loadstring("require('lua/shared/TimedActions/ISDyeHair');return _G['ISDyeHair']")()
+
+--[lua/shared/TimedActions/ISEatFoodAction.d.ts]
+Exports.ISEatFoodAction = loadstring("require('lua/shared/TimedActions/ISEatFoodAction');return _G['ISEatFoodAction']")()
+
+--[lua/shared/TimedActions/ISEjectMagazine.d.ts]
+Exports.ISEjectMagazine = loadstring("require('lua/shared/TimedActions/ISEjectMagazine');return _G['ISEjectMagazine']")()
+
+--[lua/shared/TimedActions/ISEmptyRainBarrelAction.d.ts]
+Exports.ISEmptyRainBarrelAction = loadstring("require('lua/shared/TimedActions/ISEmptyRainBarrelAction');return _G['ISEmptyRainBarrelAction']")()
+
+--[lua/shared/TimedActions/ISEquipHeavyItem.d.ts]
+Exports.ISEquipHeavyItem = loadstring("require('lua/shared/TimedActions/ISEquipHeavyItem');return _G['ISEquipHeavyItem']")()
+
+--[lua/shared/TimedActions/ISEquipWeaponAction.d.ts]
+Exports.ISEquipWeaponAction = loadstring("require('lua/shared/TimedActions/ISEquipWeaponAction');return _G['ISEquipWeaponAction']")()
+
+--[lua/shared/TimedActions/ISFillGrave.d.ts]
+Exports.ISFillGrave = loadstring("require('lua/shared/TimedActions/ISFillGrave');return _G['ISFillGrave']")()
+
+--[lua/shared/TimedActions/ISFireplaceAddFuel.d.ts]
+Exports.ISFireplaceAddFuel = loadstring("require('lua/shared/TimedActions/ISFireplaceAddFuel');return _G['ISFireplaceAddFuel']")()
+
+--[lua/shared/TimedActions/ISFireplaceExtinguish.d.ts]
+Exports.ISFireplaceExtinguish = loadstring("require('lua/shared/TimedActions/ISFireplaceExtinguish');return _G['ISFireplaceExtinguish']")()
+
+--[lua/shared/TimedActions/ISFireplaceLightFromKindle.d.ts]
+Exports.ISFireplaceLightFromKindle = loadstring("require('lua/shared/TimedActions/ISFireplaceLightFromKindle');return _G['ISFireplaceLightFromKindle']")()
+
+--[lua/shared/TimedActions/ISFireplaceLightFromLiterature.d.ts]
+Exports.ISFireplaceLightFromLiterature = loadstring("require('lua/shared/TimedActions/ISFireplaceLightFromLiterature');return _G['ISFireplaceLightFromLiterature']")()
+
+--[lua/shared/TimedActions/ISFireplaceLightFromPetrol.d.ts]
+Exports.ISFireplaceLightFromPetrol = loadstring("require('lua/shared/TimedActions/ISFireplaceLightFromPetrol');return _G['ISFireplaceLightFromPetrol']")()
+
+--[lua/shared/TimedActions/ISFitnessAction.d.ts]
+Exports.ISFitnessAction = loadstring("require('lua/shared/TimedActions/ISFitnessAction');return _G['ISFitnessAction']")()
+
+--[lua/shared/TimedActions/ISFixAction.d.ts]
+Exports.ISFixAction = loadstring("require('lua/shared/TimedActions/ISFixAction');return _G['ISFixAction']")()
+
+--[lua/shared/TimedActions/ISFixGenerator.d.ts]
+Exports.ISFixGenerator = loadstring("require('lua/shared/TimedActions/ISFixGenerator');return _G['ISFixGenerator']")()
+
+--[lua/shared/TimedActions/ISFixVehiclePartAction.d.ts]
+Exports.ISFixVehiclePartAction = loadstring("require('lua/shared/TimedActions/ISFixVehiclePartAction');return _G['ISFixVehiclePartAction']")()
+
+--[lua/shared/TimedActions/ISGarlicCataplasm.d.ts]
+Exports.ISGarlicCataplasm = loadstring("require('lua/shared/TimedActions/ISGarlicCataplasm');return _G['ISGarlicCataplasm']")()
+
+--[lua/shared/TimedActions/ISGetCompost.d.ts]
+Exports.ISGetCompost = loadstring("require('lua/shared/TimedActions/ISGetCompost');return _G['ISGetCompost']")()
+
+--[lua/shared/TimedActions/ISGetOnBedAction.d.ts]
+Exports.ISGetOnBedAction = loadstring("require('lua/shared/TimedActions/ISGetOnBedAction');return _G['ISGetOnBedAction']")()
+
+--[lua/shared/TimedActions/ISGrabCorpseAction.d.ts]
+Exports.ISGrabCorpseAction = loadstring("require('lua/shared/TimedActions/ISGrabCorpseAction');return _G['ISGrabCorpseAction']")()
+
+--[lua/shared/TimedActions/ISHurricaneLanternExtinguish.d.ts]
+Exports.ISHurricaneLanternExtinguish = loadstring("require('lua/shared/TimedActions/ISHurricaneLanternExtinguish');return _G['ISHurricaneLanternExtinguish']")()
+
+--[lua/shared/TimedActions/ISInsertMagazine.d.ts]
+Exports.ISInsertMagazine = loadstring("require('lua/shared/TimedActions/ISInsertMagazine');return _G['ISInsertMagazine']")()
+
+--[lua/shared/TimedActions/ISLightActions.d.ts]
+Exports.ISLightActions = loadstring("require('lua/shared/TimedActions/ISLightActions');return _G['ISLightActions']")()
+
+--[lua/shared/TimedActions/ISLitCandleExtinguish.d.ts]
+Exports.ISLitCandleExtinguish = loadstring("require('lua/shared/TimedActions/ISLitCandleExtinguish');return _G['ISLitCandleExtinguish']")()
+
+--[lua/shared/TimedActions/ISLoadBulletsInMagazine.d.ts]
+Exports.ISLoadBulletsInMagazine = loadstring("require('lua/shared/TimedActions/ISLoadBulletsInMagazine');return _G['ISLoadBulletsInMagazine']")()
+
+--[lua/shared/TimedActions/ISLockDoor.d.ts]
+Exports.ISLockDoor = loadstring("require('lua/shared/TimedActions/ISLockDoor');return _G['ISLockDoor']")()
+
+--[lua/shared/TimedActions/ISOpenCloseCurtain.d.ts]
+Exports.ISOpenCloseCurtain = loadstring("require('lua/shared/TimedActions/ISOpenCloseCurtain');return _G['ISOpenCloseCurtain']")()
+
+--[lua/shared/TimedActions/ISOpenCloseDoor.d.ts]
+Exports.ISOpenCloseDoor = loadstring("require('lua/shared/TimedActions/ISOpenCloseDoor');return _G['ISOpenCloseDoor']")()
+
+--[lua/shared/TimedActions/ISOpenCloseWindow.d.ts]
+Exports.ISOpenCloseWindow = loadstring("require('lua/shared/TimedActions/ISOpenCloseWindow');return _G['ISOpenCloseWindow']")()
+
+--[lua/shared/TimedActions/ISPadlockAction.d.ts]
+Exports.ISPadlockAction = loadstring("require('lua/shared/TimedActions/ISPadlockAction');return _G['ISPadlockAction']")()
+
+--[lua/shared/TimedActions/ISPadlockByCodeAction.d.ts]
+Exports.ISPadlockByCodeAction = loadstring("require('lua/shared/TimedActions/ISPadlockByCodeAction');return _G['ISPadlockByCodeAction']")()
+
+--[lua/shared/TimedActions/ISPickupBrokenGlass.d.ts]
+Exports.ISPickupBrokenGlass = loadstring("require('lua/shared/TimedActions/ISPickupBrokenGlass');return _G['ISPickupBrokenGlass']")()
+
+--[lua/shared/TimedActions/ISPickupDung.d.ts]
+Exports.ISPickupDung = loadstring("require('lua/shared/TimedActions/ISPickupDung');return _G['ISPickupDung']")()
+
+--[lua/shared/TimedActions/ISPickUpGroundCoverItem.d.ts]
+Exports.ISPickUpGroundCoverItem = loadstring("require('lua/shared/TimedActions/ISPickUpGroundCoverItem');return _G['ISPickUpGroundCoverItem']")()
+Exports.GroundCoverItems = loadstring("require('lua/shared/TimedActions/ISPickUpGroundCoverItem');return _G['GroundCoverItems']")()
+
+--[lua/shared/TimedActions/ISPlaceCarBatteryChargerAction.d.ts]
+Exports.ISPlaceCarBatteryChargerAction = loadstring("require('lua/shared/TimedActions/ISPlaceCarBatteryChargerAction');return _G['ISPlaceCarBatteryChargerAction']")()
+
+--[lua/shared/TimedActions/ISPlaceTrap.d.ts]
+Exports.ISPlaceTrap = loadstring("require('lua/shared/TimedActions/ISPlaceTrap');return _G['ISPlaceTrap']")()
+
+--[lua/shared/TimedActions/ISPlantainCataplasm.d.ts]
+Exports.ISPlantainCataplasm = loadstring("require('lua/shared/TimedActions/ISPlantainCataplasm');return _G['ISPlantainCataplasm']")()
+
+--[lua/shared/TimedActions/ISPlugGenerator.d.ts]
+Exports.ISPlugGenerator = loadstring("require('lua/shared/TimedActions/ISPlugGenerator');return _G['ISPlugGenerator']")()
+
+--[lua/shared/TimedActions/ISPlumbItem.d.ts]
+Exports.ISPlumbItem = loadstring("require('lua/shared/TimedActions/ISPlumbItem');return _G['ISPlumbItem']")()
+
+--[lua/shared/TimedActions/ISPutOutFire.d.ts]
+Exports.ISPutOutFire = loadstring("require('lua/shared/TimedActions/ISPutOutFire');return _G['ISPutOutFire']")()
+
+--[lua/shared/TimedActions/ISRackFirearm.d.ts]
+Exports.ISRackFirearm = loadstring("require('lua/shared/TimedActions/ISRackFirearm');return _G['ISRackFirearm']")()
+
+--[lua/shared/TimedActions/ISReadABook.d.ts]
+Exports.ISReadABook = loadstring("require('lua/shared/TimedActions/ISReadABook');return _G['ISReadABook']")()
+
+--[lua/shared/TimedActions/ISReloadWeaponAction.d.ts]
+Exports.ISReloadWeaponAction = loadstring("require('lua/shared/TimedActions/ISReloadWeaponAction');return _G['ISReloadWeaponAction']")()
+
+--[lua/shared/TimedActions/ISRemoveBrokenGlass.d.ts]
+Exports.ISRemoveBrokenGlass = loadstring("require('lua/shared/TimedActions/ISRemoveBrokenGlass');return _G['ISRemoveBrokenGlass']")()
+
+--[lua/shared/TimedActions/ISRemoveBullet.d.ts]
+Exports.ISRemoveBullet = loadstring("require('lua/shared/TimedActions/ISRemoveBullet');return _G['ISRemoveBullet']")()
+
+--[lua/shared/TimedActions/ISRemoveBush.d.ts]
+Exports.ISRemoveBush = loadstring("require('lua/shared/TimedActions/ISRemoveBush');return _G['ISRemoveBush']")()
+
+--[lua/shared/TimedActions/ISRemoveCarBatteryFromChargerAction.d.ts]
+Exports.ISRemoveCarBatteryFromChargerAction = loadstring("require('lua/shared/TimedActions/ISRemoveCarBatteryFromChargerAction');return _G['ISRemoveCarBatteryFromChargerAction']")()
+
+--[lua/shared/TimedActions/ISRemoveGlass.d.ts]
+Exports.ISRemoveGlass = loadstring("require('lua/shared/TimedActions/ISRemoveGlass');return _G['ISRemoveGlass']")()
+
+--[lua/shared/TimedActions/ISRemoveGrass.d.ts]
+Exports.ISRemoveGrass = loadstring("require('lua/shared/TimedActions/ISRemoveGrass');return _G['ISRemoveGrass']")()
+
+--[lua/shared/TimedActions/ISRemovePatch.d.ts]
+Exports.ISRemovePatch = loadstring("require('lua/shared/TimedActions/ISRemovePatch');return _G['ISRemovePatch']")()
+
+--[lua/shared/TimedActions/ISRemoveSheetAction.d.ts]
+Exports.ISRemoveSheetAction = loadstring("require('lua/shared/TimedActions/ISRemoveSheetAction');return _G['ISRemoveSheetAction']")()
+
+--[lua/shared/TimedActions/ISRemoveSheetRope.d.ts]
+Exports.ISRemoveSheetRope = loadstring("require('lua/shared/TimedActions/ISRemoveSheetRope');return _G['ISRemoveSheetRope']")()
+
+--[lua/shared/TimedActions/ISRemoveWeaponUpgrade.d.ts]
+Exports.ISRemoveWeaponUpgrade = loadstring("require('lua/shared/TimedActions/ISRemoveWeaponUpgrade');return _G['ISRemoveWeaponUpgrade']")()
+
+--[lua/shared/TimedActions/ISRepairClothing.d.ts]
+Exports.ISRepairClothing = loadstring("require('lua/shared/TimedActions/ISRepairClothing');return _G['ISRepairClothing']")()
+
+--[lua/shared/TimedActions/ISRestAction.d.ts]
+Exports.ISRestAction = loadstring("require('lua/shared/TimedActions/ISRestAction');return _G['ISRestAction']")()
+
+--[lua/shared/TimedActions/ISScything.d.ts]
+Exports.ISScything = loadstring("require('lua/shared/TimedActions/ISScything');return _G['ISScything']")()
+
+--[lua/shared/TimedActions/ISSetComboWasherDryerMode.d.ts]
+Exports.ISSetComboWasherDryerMode = loadstring("require('lua/shared/TimedActions/ISSetComboWasherDryerMode');return _G['ISSetComboWasherDryerMode']")()
+
+--[lua/shared/TimedActions/ISSitOnChairAction.d.ts]
+Exports.ISSitOnChairAction = loadstring("require('lua/shared/TimedActions/ISSitOnChairAction');return _G['ISSitOnChairAction']")()
+
+--[lua/shared/TimedActions/ISSitOnGround.d.ts]
+Exports.ISSitOnGround = loadstring("require('lua/shared/TimedActions/ISSitOnGround');return _G['ISSitOnGround']")()
+
+--[lua/shared/TimedActions/ISSmashWindow.d.ts]
+Exports.ISSmashWindow = loadstring("require('lua/shared/TimedActions/ISSmashWindow');return _G['ISSmashWindow']")()
+
+--[lua/shared/TimedActions/ISSplint.d.ts]
+Exports.ISSplint = loadstring("require('lua/shared/TimedActions/ISSplint');return _G['ISSplint']")()
+
+--[lua/shared/TimedActions/ISStitch.d.ts]
+Exports.ISStitch = loadstring("require('lua/shared/TimedActions/ISStitch');return _G['ISStitch']")()
+
+--[lua/shared/TimedActions/ISStopAlarmClockAction.d.ts]
+Exports.ISStopAlarmClockAction = loadstring("require('lua/shared/TimedActions/ISStopAlarmClockAction');return _G['ISStopAlarmClockAction']")()
+
+--[lua/shared/TimedActions/ISTakeCarBatteryChargerAction.d.ts]
+Exports.ISTakeCarBatteryChargerAction = loadstring("require('lua/shared/TimedActions/ISTakeCarBatteryChargerAction');return _G['ISTakeCarBatteryChargerAction']")()
+
+--[lua/shared/TimedActions/ISTakeFuel.d.ts]
+Exports.ISTakeFuel = loadstring("require('lua/shared/TimedActions/ISTakeFuel');return _G['ISTakeFuel']")()
+
+--[lua/shared/TimedActions/ISTakeGenerator.d.ts]
+Exports.ISTakeGenerator = loadstring("require('lua/shared/TimedActions/ISTakeGenerator');return _G['ISTakeGenerator']")()
+
+--[lua/shared/TimedActions/ISTakePillAction.d.ts]
+Exports.ISTakePillAction = loadstring("require('lua/shared/TimedActions/ISTakePillAction');return _G['ISTakePillAction']")()
+
+--[lua/shared/TimedActions/ISTakeTrap.d.ts]
+Exports.ISTakeTrap = loadstring("require('lua/shared/TimedActions/ISTakeTrap');return _G['ISTakeTrap']")()
+
+--[lua/shared/TimedActions/ISTakeWaterAction.d.ts]
+Exports.ISTakeWaterAction = loadstring("require('lua/shared/TimedActions/ISTakeWaterAction');return _G['ISTakeWaterAction']")()
+
+--[lua/shared/TimedActions/ISToggleClothingDryer.d.ts]
+Exports.ISToggleClothingDryer = loadstring("require('lua/shared/TimedActions/ISToggleClothingDryer');return _G['ISToggleClothingDryer']")()
+
+--[lua/shared/TimedActions/ISToggleClothingWasher.d.ts]
+Exports.ISToggleClothingWasher = loadstring("require('lua/shared/TimedActions/ISToggleClothingWasher');return _G['ISToggleClothingWasher']")()
+
+--[lua/shared/TimedActions/ISToggleComboWasherDryer.d.ts]
+Exports.ISToggleComboWasherDryer = loadstring("require('lua/shared/TimedActions/ISToggleComboWasherDryer');return _G['ISToggleComboWasherDryer']")()
+
+--[lua/shared/TimedActions/ISToggleLightAction.d.ts]
+Exports.ISToggleLightAction = loadstring("require('lua/shared/TimedActions/ISToggleLightAction');return _G['ISToggleLightAction']")()
+
+--[lua/shared/TimedActions/ISToggleStoveAction.d.ts]
+Exports.ISToggleStoveAction = loadstring("require('lua/shared/TimedActions/ISToggleStoveAction');return _G['ISToggleStoveAction']")()
+
+--[lua/shared/TimedActions/ISTransferAction.d.ts]
+Exports.ISTransferAction = loadstring("require('lua/shared/TimedActions/ISTransferAction');return _G['ISTransferAction']")()
+
+--[lua/shared/TimedActions/ISTransferWaterAction.d.ts]
+Exports.ISTransferWaterAction = loadstring("require('lua/shared/TimedActions/ISTransferWaterAction');return _G['ISTransferWaterAction']")()
+
+--[lua/shared/TimedActions/ISTrimBeard.d.ts]
+Exports.ISTrimBeard = loadstring("require('lua/shared/TimedActions/ISTrimBeard');return _G['ISTrimBeard']")()
+
+--[lua/shared/TimedActions/ISUnbarricadeAction.d.ts]
+Exports.ISUnbarricadeAction = loadstring("require('lua/shared/TimedActions/ISUnbarricadeAction');return _G['ISUnbarricadeAction']")()
+
+--[lua/shared/TimedActions/ISUnequipAction.d.ts]
+Exports.ISUnequipAction = loadstring("require('lua/shared/TimedActions/ISUnequipAction');return _G['ISUnequipAction']")()
+
+--[lua/shared/TimedActions/ISUnloadBulletsFromFirearm.d.ts]
+Exports.ISUnloadBulletsFromFirearm = loadstring("require('lua/shared/TimedActions/ISUnloadBulletsFromFirearm');return _G['ISUnloadBulletsFromFirearm']")()
+
+--[lua/shared/TimedActions/ISUnloadBulletsFromMagazine.d.ts]
+Exports.ISUnloadBulletsFromMagazine = loadstring("require('lua/shared/TimedActions/ISUnloadBulletsFromMagazine');return _G['ISUnloadBulletsFromMagazine']")()
+
+--[lua/shared/TimedActions/ISUpgradeWeapon.d.ts]
+Exports.ISUpgradeWeapon = loadstring("require('lua/shared/TimedActions/ISUpgradeWeapon');return _G['ISUpgradeWeapon']")()
+
+--[lua/shared/TimedActions/ISWaitWhileGettingUp.d.ts]
+Exports.ISWaitWhileGettingUp = loadstring("require('lua/shared/TimedActions/ISWaitWhileGettingUp');return _G['ISWaitWhileGettingUp']")()
+
+--[lua/shared/TimedActions/ISWakeOtherPlayer.d.ts]
+Exports.ISWakeOtherPlayer = loadstring("require('lua/shared/TimedActions/ISWakeOtherPlayer');return _G['ISWakeOtherPlayer']")()
+
+--[lua/shared/TimedActions/ISWashClothing.d.ts]
+Exports.ISWashClothing = loadstring("require('lua/shared/TimedActions/ISWashClothing');return _G['ISWashClothing']")()
+
+--[lua/shared/TimedActions/ISWashYourself.d.ts]
+Exports.ISWashYourself = loadstring("require('lua/shared/TimedActions/ISWashYourself');return _G['ISWashYourself']")()
+
+--[lua/shared/TimedActions/ISWearClothing.d.ts]
+Exports.ISWearClothing = loadstring("require('lua/shared/TimedActions/ISWearClothing');return _G['ISWearClothing']")()
+Exports.WearClothingAnimations = loadstring("require('lua/shared/TimedActions/ISWearClothing');return _G['WearClothingAnimations']")()
+
+--[lua/shared/TimedActions/ISWringClothing.d.ts]
+Exports.ISWringClothing = loadstring("require('lua/shared/TimedActions/ISWringClothing');return _G['ISWringClothing']")()
+
+--[lua/shared/TimedActions/ISWriteSomething.d.ts]
+Exports.ISWriteSomething = loadstring("require('lua/shared/TimedActions/ISWriteSomething');return _G['ISWriteSomething']")()
+
+--[lua/shared/Traps/TimedActions/ISAddBaitAction.d.ts]
+Exports.ISAddBaitAction = loadstring("require('lua/shared/Traps/TimedActions/ISAddBaitAction');return _G['ISAddBaitAction']")()
+
+--[lua/shared/Traps/TimedActions/ISCheckTrapAction.d.ts]
+Exports.ISCheckTrapAction = loadstring("require('lua/shared/Traps/TimedActions/ISCheckTrapAction');return _G['ISCheckTrapAction']")()
+
+--[lua/shared/Traps/TimedActions/ISRemoveBaitAction.d.ts]
+Exports.ISRemoveBaitAction = loadstring("require('lua/shared/Traps/TimedActions/ISRemoveBaitAction');return _G['ISRemoveBaitAction']")()
+
+--[lua/shared/Traps/TimedActions/ISRemoveTrapAction.d.ts]
+Exports.ISRemoveTrapAction = loadstring("require('lua/shared/Traps/TimedActions/ISRemoveTrapAction');return _G['ISRemoveTrapAction']")()
+
+--[lua/shared/Traps/TrapSystem.d.ts]
+Exports.TrapSystem = loadstring("require('lua/shared/Traps/TrapSystem');return _G['TrapSystem']")()
 
 --[lua/shared/Util/AdjacentFreeTileFinder.d.ts]
 Exports.AdjacentFreeTileFinder = loadstring("require('lua/shared/Util/AdjacentFreeTileFinder');return _G['AdjacentFreeTileFinder']")()
@@ -2413,6 +3100,72 @@ Exports.LuaNet = loadstring("require('lua/shared/Util/LuaNet');return _G['LuaNet
 
 --[lua/shared/Util/StringReplacer.d.ts]
 Exports.StringReplacer = loadstring("require('lua/shared/Util/StringReplacer');return _G['StringReplacer']")()
+
+--[lua/shared/Vehicles/TimedActions/ISAddGasolineToVehicle.d.ts]
+Exports.ISAddGasolineToVehicle = loadstring("require('lua/shared/Vehicles/TimedActions/ISAddGasolineToVehicle');return _G['ISAddGasolineToVehicle']")()
+
+--[lua/shared/Vehicles/TimedActions/ISCloseVehicleDoor.d.ts]
+Exports.ISCloseVehicleDoor = loadstring("require('lua/shared/Vehicles/TimedActions/ISCloseVehicleDoor');return _G['ISCloseVehicleDoor']")()
+
+--[lua/shared/Vehicles/TimedActions/ISDeflateTire.d.ts]
+Exports.ISDeflateTire = loadstring("require('lua/shared/Vehicles/TimedActions/ISDeflateTire');return _G['ISDeflateTire']")()
+
+--[lua/shared/Vehicles/TimedActions/ISHotwireVehicle.d.ts]
+Exports.ISHotwireVehicle = loadstring("require('lua/shared/Vehicles/TimedActions/ISHotwireVehicle');return _G['ISHotwireVehicle']")()
+
+--[lua/shared/Vehicles/TimedActions/ISInflateTire.d.ts]
+Exports.ISInflateTire = loadstring("require('lua/shared/Vehicles/TimedActions/ISInflateTire');return _G['ISInflateTire']")()
+
+--[lua/shared/Vehicles/TimedActions/ISInstallVehiclePart.d.ts]
+Exports.ISInstallVehiclePart = loadstring("require('lua/shared/Vehicles/TimedActions/ISInstallVehiclePart');return _G['ISInstallVehiclePart']")()
+
+--[lua/shared/Vehicles/TimedActions/ISLockDoors.d.ts]
+Exports.ISLockDoors = loadstring("require('lua/shared/Vehicles/TimedActions/ISLockDoors');return _G['ISLockDoors']")()
+
+--[lua/shared/Vehicles/TimedActions/ISLockVehicleDoor.d.ts]
+Exports.ISLockVehicleDoor = loadstring("require('lua/shared/Vehicles/TimedActions/ISLockVehicleDoor');return _G['ISLockVehicleDoor']")()
+
+--[lua/shared/Vehicles/TimedActions/ISOpenCloseVehicleWindow.d.ts]
+Exports.ISOpenCloseVehicleWindow = loadstring("require('lua/shared/Vehicles/TimedActions/ISOpenCloseVehicleWindow');return _G['ISOpenCloseVehicleWindow']")()
+
+--[lua/shared/Vehicles/TimedActions/ISOpenVehicleDoor.d.ts]
+Exports.ISOpenVehicleDoor = loadstring("require('lua/shared/Vehicles/TimedActions/ISOpenVehicleDoor');return _G['ISOpenVehicleDoor']")()
+
+--[lua/shared/Vehicles/TimedActions/ISRefuelFromGasPump.d.ts]
+Exports.ISRefuelFromGasPump = loadstring("require('lua/shared/Vehicles/TimedActions/ISRefuelFromGasPump');return _G['ISRefuelFromGasPump']")()
+
+--[lua/shared/Vehicles/TimedActions/ISRemoveBurntVehicle.d.ts]
+Exports.ISRemoveBurntVehicle = loadstring("require('lua/shared/Vehicles/TimedActions/ISRemoveBurntVehicle');return _G['ISRemoveBurntVehicle']")()
+
+--[lua/shared/Vehicles/TimedActions/ISRepairEngine.d.ts]
+Exports.ISRepairEngine = loadstring("require('lua/shared/Vehicles/TimedActions/ISRepairEngine');return _G['ISRepairEngine']")()
+
+--[lua/shared/Vehicles/TimedActions/ISRepairLightbar.d.ts]
+Exports.ISRepairLightbar = loadstring("require('lua/shared/Vehicles/TimedActions/ISRepairLightbar');return _G['ISRepairLightbar']")()
+
+--[lua/shared/Vehicles/TimedActions/ISShutOffVehicleEngine.d.ts]
+Exports.ISShutOffVehicleEngine = loadstring("require('lua/shared/Vehicles/TimedActions/ISShutOffVehicleEngine');return _G['ISShutOffVehicleEngine']")()
+
+--[lua/shared/Vehicles/TimedActions/ISSmashVehicleWindow.d.ts]
+Exports.ISSmashVehicleWindow = loadstring("require('lua/shared/Vehicles/TimedActions/ISSmashVehicleWindow');return _G['ISSmashVehicleWindow']")()
+
+--[lua/shared/Vehicles/TimedActions/ISStartVehicleEngine.d.ts]
+Exports.ISStartVehicleEngine = loadstring("require('lua/shared/Vehicles/TimedActions/ISStartVehicleEngine');return _G['ISStartVehicleEngine']")()
+
+--[lua/shared/Vehicles/TimedActions/ISTakeEngineParts.d.ts]
+Exports.ISTakeEngineParts = loadstring("require('lua/shared/Vehicles/TimedActions/ISTakeEngineParts');return _G['ISTakeEngineParts']")()
+
+--[lua/shared/Vehicles/TimedActions/ISTakeGasolineFromVehicle.d.ts]
+Exports.ISTakeGasolineFromVehicle = loadstring("require('lua/shared/Vehicles/TimedActions/ISTakeGasolineFromVehicle');return _G['ISTakeGasolineFromVehicle']")()
+
+--[lua/shared/Vehicles/TimedActions/ISUninstallVehiclePart.d.ts]
+Exports.ISUninstallVehiclePart = loadstring("require('lua/shared/Vehicles/TimedActions/ISUninstallVehiclePart');return _G['ISUninstallVehiclePart']")()
+
+--[lua/shared/Vehicles/TimedActions/ISUnlockVehicleDoor.d.ts]
+Exports.ISUnlockVehicleDoor = loadstring("require('lua/shared/Vehicles/TimedActions/ISUnlockVehicleDoor');return _G['ISUnlockVehicleDoor']")()
+
+--[lua/shared/Vehicles/TimedActions/ISWashVehicle.d.ts]
+Exports.ISWashVehicle = loadstring("require('lua/shared/Vehicles/TimedActions/ISWashVehicle');return _G['ISWashVehicle']")()
 
 -- [LUA-PARTIAL:STOP]
 return Exports
