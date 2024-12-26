@@ -1194,8 +1194,7 @@ declare module '@asledgehammer/pipewrench/client' {
   export const update: () => any;
 
   // [lua/client/Fishing/TensionUI.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.Fishing.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/Fluids/ISFluidBar.d.ts]
   /** @customConstructor ISFluidBar:new */
@@ -2464,64 +2463,52 @@ declare module '@asledgehammer/pipewrench/client' {
   export class ISModsHelpPanel extends lua.client.OptionScreens.ModSelector.ISModsHelpPanel {}
 
   // [lua/client/OptionScreens/ModSelector/MapOrderListBox.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/MapOrderUI.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/MissedModsPanel.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModInfoPanel.d.ts]
   /** @customConstructor ModInfoPanel:new */
   export class ModInfoPanel extends lua.client.OptionScreens.ModSelector.ModInfoPanel {}
 
   // [lua/client/OptionScreens/ModSelector/ModInfoPanelDesc.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
   /** @noSelf */
   export const createChildren: () => any;
   /** @noSelf */
   export const render: () => any;
 
   // [lua/client/OptionScreens/ModSelector/ModInfoPanelInteractionParam.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModInfoPanelParam.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModInfoPanelThumbnail.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModInfoPanelTitle.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModListBox.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModListPanel.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModListPresets.d.ts]
   /** @customConstructor ModListPresets:new */
   export class ModListPresets extends lua.client.OptionScreens.ModSelector.ModListPresets {}
 
   // [lua/client/OptionScreens/ModSelector/ModLoadOrderPanel.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModOrderListBox.d.ts]
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.ModSelector.undefined {}
+  // Wrong: class name is undefined
 
   // [lua/client/OptionScreens/ModSelector/ModSelector.d.ts]
   /** @customConstructor ModSelector:new */
@@ -2580,8 +2567,7 @@ declare module '@asledgehammer/pipewrench/client' {
   export class ServerSettingsScreen extends lua.client.OptionScreens.ServerSettingsScreen {}
   /** @customConstructor SpawnRegionsNameFilePanel:new */
   export class SpawnRegionsNameFilePanel extends lua.client.OptionScreens.SpawnRegionsNameFilePanel {}
-  /** @customConstructor undefined:new */
-  export class undefined extends lua.client.OptionScreens.undefined {}
+  // Wrong: class name is undefined
   export abstract class DefaultServerSettings extends lua.client.OptionScreens.DefaultServerSettings {}
   /** @noSelf */
   export const aboutToShow: () => any;

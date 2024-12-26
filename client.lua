@@ -828,8 +828,7 @@ Exports.FishingDebugWindow = loadstring("require('lua/client/Fishing/FishingDebu
 --[lua/client/Fishing/FishingStates.d.ts]
 
 --[lua/client/Fishing/TensionUI.d.ts]
-Exports.undefined = loadstring("require('lua/client/Fishing/TensionUI');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/Fluids/ISFluidBar.d.ts]
 Exports.ISFluidBar = loadstring("require('lua/client/Fluids/ISFluidBar');return _G['ISFluidBar']")()
 
@@ -1762,47 +1761,35 @@ Exports.ModMoreInfo = loadstring("require('lua/client/OptionScreens/ModMoreInfo'
 Exports.ISModsHelpPanel = loadstring("require('lua/client/OptionScreens/ModSelector/ISModsHelpPanel');return _G['ISModsHelpPanel']")()
 
 --[lua/client/OptionScreens/ModSelector/MapOrderListBox.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/MapOrderListBox');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/MapOrderUI.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/MapOrderUI');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/MissedModsPanel.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/MissedModsPanel');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModInfoPanel.d.ts]
 Exports.ModInfoPanel = loadstring("require('lua/client/OptionScreens/ModSelector/ModInfoPanel');return _G['ModInfoPanel']")()
 
 --[lua/client/OptionScreens/ModSelector/ModInfoPanelDesc.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModInfoPanelDesc');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModInfoPanelInteractionParam.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModInfoPanelInteractionParam');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModInfoPanelParam.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModInfoPanelParam');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModInfoPanelThumbnail.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModInfoPanelThumbnail');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModInfoPanelTitle.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModInfoPanelTitle');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModListBox.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModListBox');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModListPanel.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModListPanel');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModListPresets.d.ts]
 Exports.ModListPresets = loadstring("require('lua/client/OptionScreens/ModSelector/ModListPresets');return _G['ModListPresets']")()
 
 --[lua/client/OptionScreens/ModSelector/ModLoadOrderPanel.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModLoadOrderPanel');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModOrderListBox.d.ts]
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ModSelector/ModOrderListBox');return _G['undefined']")()
-
+-- Wrong: class name is undefined
 --[lua/client/OptionScreens/ModSelector/ModSelector.d.ts]
 Exports.ModSelector = loadstring("require('lua/client/OptionScreens/ModSelector/ModSelector');return _G['ModSelector']")()
 
@@ -1830,8 +1817,7 @@ Exports.ServerList = loadstring("require('lua/client/OptionScreens/ServerList');
 Exports.BaseServerSettingsPanel = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['BaseServerSettingsPanel']")()
 Exports.ServerSettingsScreen = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['ServerSettingsScreen']")()
 Exports.SpawnRegionsNameFilePanel = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['SpawnRegionsNameFilePanel']")()
-Exports.undefined = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['undefined']")()
-Exports.DefaultServerSettings = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['DefaultServerSettings']")()
+-- Wrong: class name is undefinedExports.DefaultServerSettings = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['DefaultServerSettings']")()
 
 --[lua/client/OptionScreens/ServerToolbox.d.ts]
 Exports.ServerToolbox = loadstring("require('lua/client/OptionScreens/ServerToolbox');return _G['ServerToolbox']")()

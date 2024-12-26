@@ -137,9 +137,34 @@ function patch_ISUIElement() {
     }
 }
 
+function patch_zombie_entity_components_attributes() {
+    console.log("Patching zombie_entity_components_attributes.d.ts ...")
+    try {
+        const file = path.join(__dirname, "java/zombie_entity_components_attributes.d.ts")
+        let content = fs.readFileSync(file, 'utf-8')
+        
+        content = content.replaceAll(
+            `C<any, any>`,
+            `C`
+        ).replaceAll(
+            `any<any, any>`,
+            `any`
+        ).replace(
+            `zombie.entity.components.attributes.AttributeInstance>`,
+            `zombie.entity.components.attributes.AttributeInstance<any, any>>`
+        )
+
+        fs.writeFileSync(file, content)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
 // Run
 patch_fmod_fmod()
 patch_pipewrench()
 patch_ThermoDebug()
 patch_ISBaseObject()
 patch_ISUIElement()
+patch_zombie_entity_components_attributes()

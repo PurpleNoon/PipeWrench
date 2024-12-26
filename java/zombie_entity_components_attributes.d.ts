@@ -251,7 +251,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (BiConsumer arg0): void
        */
-      forEach(arg0: java.util._function_.BiConsumer<zombie.entity.components.attributes.AttributeType, zombie.entity.components.attributes.AttributeInstance>): void;
+      forEach(arg0: java.util._function_.BiConsumer<zombie.entity.components.attributes.AttributeType, zombie.entity.components.attributes.AttributeInstance<any, any>>): void;
       /**
        * Method Parameters: 
        *  - (Bool arg0): boolean
@@ -275,7 +275,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Short arg0, short arg1): number
        *  - (String arg0, String arg1): string
        */
-      get<E>(arg0: zombie.entity.components.attributes.AttributeType$Bool | zombie.entity.components.attributes.AttributeType$Byte | zombie.entity.components.attributes.AttributeType$Double | zombie.entity.components.attributes.AttributeType$Enum<E> | zombie.entity.components.attributes.AttributeType$EnumSet<E> | zombie.entity.components.attributes.AttributeType$EnumStringSet<E> | zombie.entity.components.attributes.AttributeType$Float | zombie.entity.components.attributes.AttributeType$Int | zombie.entity.components.attributes.AttributeType$Long | zombie.entity.components.attributes.AttributeType$Short | zombie.entity.components.attributes.AttributeType$String, arg1?: boolean | number | E<any> | string): boolean | number | E<any> | java.util.EnumSet<E> | zombie.entity.components.attributes.EnumStringObj<E> | string;
+      get<E>(arg0: zombie.entity.components.attributes.AttributeType$Bool | zombie.entity.components.attributes.AttributeType$Byte | zombie.entity.components.attributes.AttributeType$Double | zombie.entity.components.attributes.AttributeType$Enum<E> | zombie.entity.components.attributes.AttributeType$EnumSet<E> | zombie.entity.components.attributes.AttributeType$EnumStringSet<E> | zombie.entity.components.attributes.AttributeType$Float | zombie.entity.components.attributes.AttributeType$Int | zombie.entity.components.attributes.AttributeType$Long | zombie.entity.components.attributes.AttributeType$Short | zombie.entity.components.attributes.AttributeType$String, arg1?: boolean | number | E | string): boolean | number | E<any> | java.util.EnumSet<E> | zombie.entity.components.attributes.EnumStringObj<E> | string;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.entity.components.attributes.AttributeInstance
@@ -382,7 +382,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Short arg0, short arg1): void
        *  - (String arg0, String arg1): void
        */
-      put<E>(arg0: zombie.entity.components.attributes.AttributeType$Bool | zombie.entity.components.attributes.AttributeType$Byte | zombie.entity.components.attributes.AttributeType$Double | zombie.entity.components.attributes.AttributeType$Enum<E> | zombie.entity.components.attributes.AttributeType$EnumSet<E> | zombie.entity.components.attributes.AttributeType$EnumStringSet<E> | zombie.entity.components.attributes.AttributeType$Float | zombie.entity.components.attributes.AttributeType$Int | zombie.entity.components.attributes.AttributeType$Long | zombie.entity.components.attributes.AttributeType$Short | zombie.entity.components.attributes.AttributeType$String, arg1: boolean | number | E<any> | java.util.EnumSet<E> | zombie.entity.components.attributes.EnumStringObj<E> | string): void;
+      put<E>(arg0: zombie.entity.components.attributes.AttributeType$Bool | zombie.entity.components.attributes.AttributeType$Byte | zombie.entity.components.attributes.AttributeType$Double | zombie.entity.components.attributes.AttributeType$Enum<E> | zombie.entity.components.attributes.AttributeType$EnumSet<E> | zombie.entity.components.attributes.AttributeType$EnumStringSet<E> | zombie.entity.components.attributes.AttributeType$Float | zombie.entity.components.attributes.AttributeType$Int | zombie.entity.components.attributes.AttributeType$Long | zombie.entity.components.attributes.AttributeType$Short | zombie.entity.components.attributes.AttributeType$String, arg1: boolean | number | E | java.util.EnumSet<E> | zombie.entity.components.attributes.EnumStringObj<E> | string): void;
       /**
        * Method Parameters: 
        *  - (Numeric arg0, float arg1): void
@@ -422,7 +422,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Short arg0, short arg1): void
        *  - (String arg0, String arg1): void
        */
-      set<E>(arg0: zombie.entity.components.attributes.AttributeType$Bool | zombie.entity.components.attributes.AttributeType$Byte | zombie.entity.components.attributes.AttributeType$Double | zombie.entity.components.attributes.AttributeType$Enum<E> | zombie.entity.components.attributes.AttributeType$EnumSet<E> | zombie.entity.components.attributes.AttributeType$EnumStringSet<E> | zombie.entity.components.attributes.AttributeType$Float | zombie.entity.components.attributes.AttributeType$Int | zombie.entity.components.attributes.AttributeType$Long | zombie.entity.components.attributes.AttributeType$Short | zombie.entity.components.attributes.AttributeType$String, arg1: boolean | number | E<any> | java.util.EnumSet<E> | zombie.entity.components.attributes.EnumStringObj<E> | string): void;
+      set<E>(arg0: zombie.entity.components.attributes.AttributeType$Bool | zombie.entity.components.attributes.AttributeType$Byte | zombie.entity.components.attributes.AttributeType$Double | zombie.entity.components.attributes.AttributeType$Enum<E> | zombie.entity.components.attributes.AttributeType$EnumSet<E> | zombie.entity.components.attributes.AttributeType$EnumStringSet<E> | zombie.entity.components.attributes.AttributeType$Float | zombie.entity.components.attributes.AttributeType$Int | zombie.entity.components.attributes.AttributeType$Long | zombie.entity.components.attributes.AttributeType$Short | zombie.entity.components.attributes.AttributeType$String, arg1: boolean | number | E | java.util.EnumSet<E> | zombie.entity.components.attributes.EnumStringObj<E> | string): void;
       /**
        * Method Parameters: 
        *  - (Numeric arg0, float arg1): void
@@ -464,12 +464,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): C
        */
-      copy(): C<any, any>;
+      copy(): C;
       /**
        * Method Parameters: 
        *  - (AttributeInstance arg0): boolean
        */
-      equalTo(arg0: C<any, any>): boolean;
+      equalTo(arg0: C): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -985,7 +985,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Enum arg0): void
        */
-      setValue(arg0: E<any>): void;
+      setValue(arg0: E): void;
       /**
        * Method Parameters: 
        *  - (String arg0): boolean
@@ -1632,12 +1632,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): C
        */
-      copy(): any<any, any>;
+      copy(): any;
       /**
        * Method Parameters: 
        *  - (AttributeInstance arg0): boolean
        */
-      equalTo(arg0: any<any, any>): boolean;
+      equalTo(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -3171,7 +3171,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Enum arg0): void
        *  - (String arg0): void
        */
-      add(arg0: E<any> | string): void;
+      add(arg0: E | string): void;
       /**
        * Method Parameters: 
        *  - (EnumStringObj arg0): void
@@ -3188,7 +3188,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Enum arg0): boolean
        *  - (String arg0): boolean
        */
-      contains(arg0: E<any> | string): boolean;
+      contains(arg0: E | string): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.entity.components.attributes.EnumStringObj<E>
@@ -3214,7 +3214,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Enum arg0): boolean
        *  - (String arg0): boolean
        */
-      remove(arg0: E<any> | string): boolean;
+      remove(arg0: E | string): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void

@@ -12,7 +12,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Enum arg0): void
        */
-      add(arg0: E<any>): void;
+      add(arg0: E): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -29,7 +29,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Enum arg0): boolean
        *  - (int arg0): boolean
        */
-      contains(arg0: E<any> | number): boolean;
+      contains(arg0: E | number): boolean;
       /**
        * Method Parameters: 
        *  - (EnumBitStore arg0): void
@@ -64,7 +64,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Enum arg0): void
        */
-      remove(arg0: E<any>): void;
+      remove(arg0: E): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0): void
@@ -117,7 +117,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Enum arg0, Enum arg1, Enum arg2, Enum arg3): zombie.entity.util.enums.EnumBitStore<E>
        *  - (Enum arg0, Enum arg1, Enum arg2, Enum arg3, Enum arg4): zombie.entity.util.enums.EnumBitStore<E>
        */
-      static of<E>(arg0: E<any>, arg1?: E<any> | E[], arg2?: E<any>, arg3?: E<any>, arg4?: E<any>): zombie.entity.util.enums.EnumBitStore<E>;
+      static of<E>(arg0: E | E | E | E | E | E, arg1?: E | E[] | E | E | E, arg2?: E | E | E, arg3?: E | E, arg4?: E): zombie.entity.util.enums.EnumBitStore<E>;
     }
   }
 }
