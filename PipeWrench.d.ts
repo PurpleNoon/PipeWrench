@@ -8478,9 +8478,6 @@ declare module '@asledgehammer/pipewrench' {
   // [lua/shared/Foraging/forageSystem.d.ts]
   export abstract class forageSystem extends lua.shared.Foraging.forageSystem {}
 
-  // [lua/shared/Foraging/forageZones.d.ts]
-  export abstract class forageZones extends lua.shared.Foraging.forageZones {}
-
   // [lua/shared/Foraging/ISForageAction.d.ts]
   /** @customConstructor ISForageAction:new */
   export class ISForageAction extends lua.shared.Foraging.ISForageAction {}

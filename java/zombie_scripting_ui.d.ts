@@ -1336,9 +1336,9 @@ declare module '@asledgehammer/pipewrench' {
       getVar(arg0: string): zombie.scripting.ui.XuiScript$XuiVar<any, any>;
       /**
        * Method Parameters: 
-       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>
+       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>
        */
-      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>;
+      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.ui.XuiScript$XuiVector
@@ -1814,9 +1814,9 @@ declare module '@asledgehammer/pipewrench' {
       getVar(arg0: string): zombie.scripting.ui.XuiScript$XuiVar<any, any>;
       /**
        * Method Parameters: 
-       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>
+       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>
        */
-      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>;
+      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.ui.XuiScript$XuiVector
@@ -4288,9 +4288,9 @@ declare module '@asledgehammer/pipewrench' {
       getVar(arg0: string): zombie.scripting.ui.XuiScript$XuiVar<any, any>;
       /**
        * Method Parameters: 
-       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>
+       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>
        */
-      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>;
+      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.ui.XuiScript$XuiVector
@@ -4765,9 +4765,9 @@ declare module '@asledgehammer/pipewrench' {
       getVar(arg0: string): zombie.scripting.ui.XuiScript$XuiVar<any, any>;
       /**
        * Method Parameters: 
-       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>
+       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>
        */
-      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>;
+      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.ui.XuiScript$XuiVector
@@ -5247,9 +5247,9 @@ declare module '@asledgehammer/pipewrench' {
       getVar(arg0: string): zombie.scripting.ui.XuiScript$XuiVar<any, any>;
       /**
        * Method Parameters: 
-       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>
+       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>
        */
-      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>;
+      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.ui.XuiScript$XuiVector
@@ -5724,9 +5724,9 @@ declare module '@asledgehammer/pipewrench' {
       getVar(arg0: string): zombie.scripting.ui.XuiScript$XuiVar<any, any>;
       /**
        * Method Parameters: 
-       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>
+       *  - (Empty): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>
        */
-      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar>;
+      getVars(): java.util.ArrayList<zombie.scripting.ui.XuiScript$XuiVar<any, any>>;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.ui.XuiScript$XuiVector

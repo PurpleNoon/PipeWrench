@@ -299,7 +299,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (RandomGenerator[] arg0)
        *  - (Randomizer arg0)
        */
-      constructor(arg0: zombie.scripting.itemConfig.RandomGenerator[] | zombie.scripting.itemConfig.Randomizer);
+      constructor(arg0: zombie.scripting.itemConfig.RandomGenerator<any>[] | zombie.scripting.itemConfig.Randomizer);
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.itemConfig.Randomizer

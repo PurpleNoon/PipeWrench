@@ -275,7 +275,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Short arg0, short arg1): number
        *  - (String arg0, String arg1): string
        */
-      get<E>(arg0: zombie.entity.components.attributes.AttributeType$Bool | zombie.entity.components.attributes.AttributeType$Byte | zombie.entity.components.attributes.AttributeType$Double | zombie.entity.components.attributes.AttributeType$Enum<E> | zombie.entity.components.attributes.AttributeType$EnumSet<E> | zombie.entity.components.attributes.AttributeType$EnumStringSet<E> | zombie.entity.components.attributes.AttributeType$Float | zombie.entity.components.attributes.AttributeType$Int | zombie.entity.components.attributes.AttributeType$Long | zombie.entity.components.attributes.AttributeType$Short | zombie.entity.components.attributes.AttributeType$String, arg1?: boolean | number | E | string): boolean | number | E<any> | java.util.EnumSet<E> | zombie.entity.components.attributes.EnumStringObj<E> | string;
+      get<E>(arg0: zombie.entity.components.attributes.AttributeType$Bool | zombie.entity.components.attributes.AttributeType$Byte | zombie.entity.components.attributes.AttributeType$Double | zombie.entity.components.attributes.AttributeType$Enum<E> | zombie.entity.components.attributes.AttributeType$EnumSet<E> | zombie.entity.components.attributes.AttributeType$EnumStringSet<E> | zombie.entity.components.attributes.AttributeType$Float | zombie.entity.components.attributes.AttributeType$Int | zombie.entity.components.attributes.AttributeType$Long | zombie.entity.components.attributes.AttributeType$Short | zombie.entity.components.attributes.AttributeType$String, arg1?: boolean | number | E | string): boolean | number | E | java.util.EnumSet<E> | zombie.entity.components.attributes.EnumStringObj<E> | string;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.entity.components.attributes.AttributeInstance
@@ -945,7 +945,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): E
        */
-      getValue(): E<any>;
+      getValue(): E;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.entity.components.attributes.AttributeValueType
@@ -2256,17 +2256,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (byte arg0): E
        */
-      enumValueFromByteID(arg0: number): E<any>;
+      enumValueFromByteID(arg0: number): E;
       /**
        * Method Parameters: 
        *  - (String arg0): E
        */
-      enumValueFromString(arg0: string): E<any>;
+      enumValueFromString(arg0: string): E;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      getInitialValue(): E<any>;
+      getInitialValue(): E;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2329,12 +2329,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (byte arg0): E
        */
-      enumValueFromByteID(arg0: number): E<any>;
+      enumValueFromByteID(arg0: number): E;
       /**
        * Method Parameters: 
        *  - (String arg0): E
        */
-      enumValueFromString(arg0: string): E<any>;
+      enumValueFromString(arg0: string): E;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.EnumSet<E>
@@ -2402,12 +2402,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (byte arg0): E
        */
-      enumValueFromByteID(arg0: number): E<any>;
+      enumValueFromByteID(arg0: number): E;
       /**
        * Method Parameters: 
        *  - (String arg0): E
        */
-      enumValueFromString(arg0: string): E<any>;
+      enumValueFromString(arg0: string): E;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.entity.components.attributes.EnumStringObj<E>
@@ -3009,7 +3009,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Class arg0, String arg1): E
        */
-      static enumValueFromScriptString<E>(arg0: java.lang.Class<E>, arg1: string): E<any>;
+      static enumValueFromScriptString<E>(arg0: java.lang.Class<E>, arg1: string): E;
       /**
        * @noSelf
        *
@@ -3051,7 +3051,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Class arg0, String arg1): E
        */
-      static tryEnumValueFromScriptString<E>(arg0: java.lang.Class<E>, arg1: string): E<any>;
+      static tryEnumValueFromScriptString<E>(arg0: java.lang.Class<E>, arg1: string): E;
     }
     /** [ENUM] zombie.entity.components.attributes.AttributeValueType */
     export class AttributeValueType {

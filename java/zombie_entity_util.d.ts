@@ -18,7 +18,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0, int arg1, Class arg2)
        *  - (boolean arg0, Object[] arg1, int arg2, int arg3)
        */
-      constructor(arg0?: T[] | number | java.lang.Class | zombie.entity.util.Array<T> | boolean, arg1?: number | T[], arg2?: java.lang.Class | number, arg3?: number);
+      constructor(arg0?: T[] | number | java.lang.Class<any> | zombie.entity.util.Array<T> | boolean, arg1?: number | T[], arg2?: java.lang.Class<any> | number, arg3?: number);
       /**
        * Method Parameters: 
        *  - (Object arg0): void
