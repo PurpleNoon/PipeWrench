@@ -89,12 +89,6 @@ declare module '@asledgehammer/pipewrench/client' {
       setJoypadFocused(focused: any, joypadData: any, ...__args: never[]): any;
     }
 
-    /** @customConstructor undefined:new */
-    export class undefined extends lua.client.ISUI.ISPanelJoypad {
-      [id: string]: any;
-      static [id: string]: any;
-    }
-
     export abstract class DefaultServerSettings {
       static [id: string]: any;
 
